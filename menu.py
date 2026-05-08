@@ -158,19 +158,23 @@ def extract_section(section_name, expected_count): # Retrieves the input section
         )
     })
     
-    response = client.messages.create(**local_params)
+    try:
+        response = client.messages.create(**local_params)
 
-    print(f"Local Agent Token Usage: Input: {response.usage.input_tokens} Output:  {response.usage.output_tokens} Total:  {response.usage.input_tokens + response.usage.output_tokens} IFC: $ {estimate_cost(response.usage.input_tokens, response.usage.output_tokens)}")
-    add_global_cost(estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
-    add_agent_cost(response.usage.input_tokens, response.usage.output_tokens, response.usage.input_tokens + response.usage.output_tokens, estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
-    
-    raw = clean_json_response(response.content[0].text)
+        print(f"Local Agent Token Usage: Input: {response.usage.input_tokens} Output:  {response.usage.output_tokens} Total:  {response.usage.input_tokens + response.usage.output_tokens} IFC: $ {estimate_cost(response.usage.input_tokens, response.usage.output_tokens)}")
+        add_global_cost(estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
+        add_agent_cost(response.usage.input_tokens, response.usage.output_tokens, response.usage.input_tokens + response.usage.output_tokens, estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
 
-    items = json.loads(raw)
-    for item in items:
-        item["category"] = section_name
-    return items
+        raw = clean_json_response(response.content[0].text)
+        
+        items = json.loads(raw)
+        for item in items:
+            item["category"] = section_name
+        return items
     
+    except Exception as e:
+        print(f"Section '{section_name}' failed: {e}")
+        return []
 
 def process_data(response):
 
@@ -224,7 +228,6 @@ def process_data(response):
     print("Program Total Cost")
     print("Input Tokens:", response.usage.input_tokens + GLOBAL_AGENT_TOKEN_INPUT_COST)
     print("Output Tokens:", response.usage.output_tokens + GLOBAL_AGENT_TOKEN_OUTPUT_COST)
-    add_global_cost(estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
     print("Total Tokens:", response.usage.input_tokens + response.usage.output_tokens + GLOBAL_AGENT_TOTAL_TOKEN_COST)
     print("Actual Cost (IFC): $", GLOBAL_COST)
 
