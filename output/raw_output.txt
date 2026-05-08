@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Family Style Appetizers",
+    "item_count": 3,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Salad Course",
+    "item_count": 1,
+    "abnormalities": "Only one salad option with no choice"
+  },
+  {
+    "name": "Entree Options",
+    "item_count": 3,
+    "abnormalities": "Guests must choose one entree from the three options"
+  }
+]

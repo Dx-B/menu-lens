@@ -1,0 +1,56 @@
+{
+  "all_items": [
+    {
+      "name": "Burrata Fritti",
+      "price": null,
+      "description": "Panko breaded burrata, tomato vin, prosciutto, truffle honey",
+      "abnormalities": "No price listed on menu",
+      "category": "Family Style Appetizers"
+    },
+    {
+      "name": "Calamari Agrodolce",
+      "price": null,
+      "description": "Fried calamari, tomato agrodolce, lemon garlic aioli",
+      "abnormalities": "No price listed on menu",
+      "category": "Family Style Appetizers"
+    },
+    {
+      "name": "Cavoletti Pecorino",
+      "price": null,
+      "description": "Brussel sprouts, garlic cream sauce, toasted breadcrumbs",
+      "abnormalities": "No price listed on menu",
+      "category": "Family Style Appetizers"
+    },
+    {
+      "name": "Terzo Salad",
+      "price": null,
+      "description": "Shaved sprouts, arugula, golden raisin, red onion, hazelnut vin",
+      "abnormalities": "No price listed, likely included as part of a fixed prix fixe or event menu",
+      "category": "Salad Course"
+    },
+    {
+      "name": "Salmon e Fregola",
+      "price": null,
+      "description": "Fregola, guanciale, brussels sprouts, spinach, sun dried tomato",
+      "abnormalities": "No price listed on menu",
+      "category": "Entree Options"
+    },
+    {
+      "name": "Bucatini & Meatballs",
+      "price": null,
+      "description": "Fresh bucatini, homemade Wagyu meatballs, Jersey tomato sauce",
+      "abnormalities": "No price listed on menu",
+      "category": "Entree Options"
+    },
+    {
+      "name": "Italian Steak au Poivre",
+      "price": null,
+      "description": "Hanger steak, cacio e pepe gnocchi, fried potato skins",
+      "abnormalities": "No price listed on menu",
+      "category": "Entree Options"
+    }
+  ],
+  "usage": {
+    "total_cost": 0.021711
+  }
+}
