@@ -34,8 +34,8 @@ os.makedirs(output_dir, exist_ok=True)
 OUTPUT_FILE = "output.json"
 RAW_OUTPUT_FILE = "raw_output.txt"
 
-MOCK_PHASE_1 = True
-MOCK_PHASE_2 = True
+MOCK_PHASE_1 = False # True = Read from Cache Mode, False = API call directly
+MOCK_PHASE_2 = True # True = Read from Cache Mode, False = API call directly
 PHASE1_CACHE = "output/phase1_cache.json"
 PHASE2_CACHE = "output/phase2_cache.json"
 
@@ -158,7 +158,7 @@ def run_phase2(menu_data):
                 all_items = json.load(f)
             print("Phase 2: Parallel Section Extraction -- Read from Cache Mode Enabled (MOCK_PHASE_2 = True)")
         except FileNotFoundError:
-            print(f"Phase 2 cache not found. Populate with the API first. MOCK_PHASE_2 = False to use the API. [Failed to find {PHASE2_CACHE} at {os.path.abspath(PHASE2_CACHE)}].")
+            print(f"Phase 2: Parallel Section Extraction --  Cache not found. Populate with the API first. MOCK_PHASE_2 = False to use the API. [Failed to find {PHASE2_CACHE} at {os.path.abspath(PHASE2_CACHE)}].")
             exit()
     else:
         print(f"Stage 2: Parallel Section Extraction | Multithreading: {USE_MULTITHREADING}")
@@ -201,9 +201,16 @@ def write_output(all_items):
     message = (
         f"READ CACHE MODE ENABLED: Output created in {os.path.abspath(OUTPUT_FILE)}"
         if MOCK_PHASE_1
-        else f"READ CACHE MODE DISABLED: Cache created and saved to {os.path.abspath(PHASE1_CACHE)}"
+        else f"READ CACHE MODE DISABLED: Cache for Phase 1 created and saved to {os.path.abspath(PHASE1_CACHE)}"
     )
-    print(f"\nSuccess. {message}\n")
+
+    p2_message = (
+        f"READ CACHE MODE ENABLED: Output created in {os.path.abspath(OUTPUT_FILE)}"
+        if MOCK_PHASE_2
+        else f"READ CACHE MODE DISABLED: Cache for Phase 2 created and saved to {os.path.abspath(PHASE2_CACHE)}"
+    )
+
+    print(f"\nSuccess.\n{message}\n{p2_message}\n")
 
 def print_costs(response):
     if not isinstance(response, list):
@@ -257,6 +264,7 @@ def process_data(response):
         # Cost Analytics for first call
         print("Stage 1: Section Discovery -- Read from Cache Mode Disabled (MOCK_PHASE_1 = False)")
         print(f"Main Agent Token Usage: Input: {response.usage.input_tokens} OUTPUT: {response.usage.output_tokens} TOTAL: {response.usage.input_tokens + response.usage.output_tokens} IFC: $ {estimate_cost(response.usage.input_tokens, response.usage.output_tokens)}")
+        add_global_cost(estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
 
         # Always save raw response first
         raw = clean_json_response(response.content[0].text)
@@ -312,7 +320,7 @@ if COST_MODE:
     # print(f"Calculated input tokens: {estimated_input}")
     print(f"Estimated cost: ${estimate_input_cost(estimated_input):.4f} (Lower Limit) ({estimated_input} Tokens) - ${estimated_cost:.4f} (Upper Limit) ({GLOBAL_OUTPUT_TOKEN_BUDGET} Tokens)")
     
-    print(f"Cache Mode: {MOCK_PHASE_1}")
+    print(f"Cache Mode: {MOCK_PHASE_1 or MOCK_PHASE_2} / P1 Cache Mode: {MOCK_PHASE_1} / P2 Cache Mode: {MOCK_PHASE_2}")
     confirm = input("Proceed? (y/n): ")
     if confirm.lower() != "y":
         print("Aborted.")
