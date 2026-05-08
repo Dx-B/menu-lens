@@ -37,6 +37,7 @@ RAW_OUTPUT_FILE = "raw_output.txt"
 MOCK_PHASE_1 = True
 MOCK_PHASE_2 = True
 PHASE1_CACHE = "output/phase1_cache.json"
+PHASE2_CACHE = "output/phase2_cache.json"
 
 GLOBAL_COST = 0
 GLOBAL_AGENT_TOKEN_INPUT_COST = 0
@@ -148,8 +149,70 @@ def add_agent_cost(input_tokens, output_tokens, total, ifc):
         GLOBAL_AGENT_TOTAL_TOKEN_COST += total
         GLOBAL_AGENT_INTERNAL_FINAL_COST += ifc
 
+def run_phase2(menu_data):
+    all_items = []
 
+    if MOCK_PHASE_2:
+        try:
+            with open(PHASE2_CACHE, "r") as f:
+                all_items = json.load(f)
+            print("Phase 2: Parallel Section Extraction -- Read from Cache Mode Enabled (MOCK_PHASE_2 = True)")
+        except FileNotFoundError:
+            print(f"Phase 2 cache not found. Populate with the API first. MOCK_PHASE_2 = False to use the API. [Failed to find {PHASE2_CACHE} at {os.path.abspath(PHASE2_CACHE)}].")
+            exit()
+    else:
+        print(f"Stage 2: Parallel Section Extraction | Multithreading: {USE_MULTITHREADING}")
+        if USE_MULTITHREADING:
+            # Parallel
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                futures = {
+                    executor.submit(extract_section, section["name"], section["item_count"]) : section
+                    for section in menu_data
+                }
+                for future in as_completed(futures):
+                    items = future.result()
+                    all_items.extend(items)
+        else:
+            # Iterator, This should never be used unless directly testing for time comparison.
+            for section in menu_data:
+                items = extract_section(section["name"], section["item_count"])
+                all_items.extend(items)
+        print(f"Total Sub-Agent Token Usage: Input: {GLOBAL_AGENT_TOKEN_INPUT_COST} OUTPUT: {GLOBAL_AGENT_TOKEN_OUTPUT_COST} TOTAL: {GLOBAL_AGENT_TOTAL_TOKEN_COST} IFC: $ {GLOBAL_AGENT_INTERNAL_FINAL_COST}")
 
+    return all_items
+
+def write_output(all_items):
+    output = {
+        "all_items": all_items,
+        "usage": {
+            "total_cost": GLOBAL_COST
+        }
+    }
+
+    # After all_items is populated, before writing output.json (Creates the Cache)
+    if not MOCK_PHASE_2:
+        with open(PHASE2_CACHE, "w") as f:
+            json.dump(all_items, f, indent=2, ensure_ascii=False)
+    
+    # Write the output file to the output directory
+    with open(os.path.join(output_dir, OUTPUT_FILE), "w") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+        
+    message = (
+        f"READ CACHE MODE ENABLED: Output created in {os.path.abspath(OUTPUT_FILE)}"
+        if MOCK_PHASE_1
+        else f"READ CACHE MODE DISABLED: Cache created and saved to {os.path.abspath(PHASE1_CACHE)}"
+    )
+    print(f"\nSuccess. {message}\n")
+
+def print_costs(response):
+    if not isinstance(response, list):
+        print("RAW Token Data:", response.usage)
+        print("Program Total Cost")
+        print("Input Tokens:", response.usage.input_tokens + GLOBAL_AGENT_TOKEN_INPUT_COST)
+        print("Output Tokens:", response.usage.output_tokens + GLOBAL_AGENT_TOKEN_OUTPUT_COST)
+        print("Total Tokens:", response.usage.input_tokens + response.usage.output_tokens + GLOBAL_AGENT_TOTAL_TOKEN_COST)
+    print("Actual Cost (IFC): $", GLOBAL_COST)
 
 def extract_section(section_name, expected_count): # Retrieves the input section items into a dictionary. INPUT: sections dict (section name, item count? as a expected length), menu.jpg, client OUTPUT: JSON
     # Deep copy so we don't mutate the global
@@ -206,53 +269,14 @@ def process_data(response):
             json.dump(menu_data, f, indent=2)
     # Then try to parse
     try:
-        all_items = []
-        print(f"Stage 2: Parallel Section Extraction | Multithreading: {USE_MULTITHREADING}")
-        if USE_MULTITHREADING:
-            # Parallel
-            with ThreadPoolExecutor(max_workers=10) as executor:
-                futures = {
-                    executor.submit(extract_section, section["name"], section["item_count"]) : section
-                    for section in menu_data
-                }
-                for future in as_completed(futures):
-                    items = future.result()
-                    all_items.extend(items)
-        else:
-            # Iterator
-            for section in menu_data:
-                items = extract_section(section["name"], section["item_count"])
-                all_items.extend(items)
-        print(f"Total Sub-Agent Token Usage: Input: {GLOBAL_AGENT_TOKEN_INPUT_COST} OUTPUT: {GLOBAL_AGENT_TOKEN_OUTPUT_COST} TOTAL: {GLOBAL_AGENT_TOTAL_TOKEN_COST} IFC: $ {GLOBAL_AGENT_INTERNAL_FINAL_COST}")
-
+        all_items = run_phase2(menu_data)
         # Output JSON
-        output = {
-            "all_items": all_items,
-            "usage": {
-                "total_cost": GLOBAL_COST
-            }
-        }
-        
-        with open(os.path.join(output_dir, OUTPUT_FILE), "w") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
-            
-        message = (
-            f"USE CACHE MODE ENABLED: Output created in {os.path.abspath(OUTPUT_FILE)}"
-            if MOCK_PHASE_1
-            else f"USE NO-CACHE MODE: Cache created and saved to {os.path.abspath(PHASE1_CACHE)}"
-        )
-        print(f"\nSuccess. {message}\n")
+        write_output(all_items)
 
     except json.JSONDecodeError as e:
         print(f"Parsing failed: {e}")
         print("Raw output saved to raw_output.txt for inspection")
-    if not isinstance(response, list):
-        print("RAW Token Data:", response.usage)
-        print("Program Total Cost")
-        print("Input Tokens:", response.usage.input_tokens + GLOBAL_AGENT_TOKEN_INPUT_COST)
-        print("Output Tokens:", response.usage.output_tokens + GLOBAL_AGENT_TOKEN_OUTPUT_COST)
-        print("Total Tokens:", response.usage.input_tokens + response.usage.output_tokens + GLOBAL_AGENT_TOTAL_TOKEN_COST)
-    print("Actual Cost (IFC): $", GLOBAL_COST)
+    print_costs(response)
 
 def populate_menu_data():
     if MOCK_PHASE_1:
