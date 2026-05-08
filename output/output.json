@@ -1,6 +1,27 @@
 {
   "all_items": [
     {
+      "name": "Edison Breakfast Wrap",
+      "price": "$8.95",
+      "description": "Scrambled eggs with fresh spinach, red pepper, feta cheese and fresh dill. Served with tortilla chips & grape garnish.",
+      "abnormalities": "The category appears to contain only one item. The exact price and full description are partially obscured by the hand holding the menu, making complete accuracy difficult to confirm.",
+      "category": "Edison Breakfast Wrap"
+    },
+    {
+      "name": "Edison's Breakfast Burrito",
+      "price": "unknown - partially obscured",
+      "description": "Scrambled eggs with peppers, onions, pepper jack cheese with ham and sausage, served with salsa and tortilla chips",
+      "abnormalities": "The price is not clearly visible in the image as it is partially obscured. The full description may be incomplete due to image quality and overlap with other menu sections.",
+      "category": "Edison's Breakfast Burrito"
+    },
+    {
+      "name": "Edison's Breakfast Salad Platter",
+      "price": "16.95",
+      "description": "Creamy cottage cheese surrounded by fresh sliced bananas, strawberries, chunks of melon, sliced mango & kiwi.",
+      "abnormalities": "This appears to be a single platter item rather than a category with multiple items. The menu lists it as one complete dish. Price is partially obscured but appears to be $16.95.",
+      "category": "Edison's Breakfast Salad Platter"
+    },
+    {
       "name": "Florida Orange Juice",
       "price": null,
       "description": "Florida Orange Juice",
@@ -16,9 +37,16 @@
     },
     {
       "name": "Fresh Squeezed Florida OJ",
-      "price": "$6.00 (small), unclear for large",
-      "description": "Fresh Squeezed Florida OJ available in 11oz or Glass sizes",
-      "abnormalities": "Pricing partially obscured by hand holding menu",
+      "price": "$6.00 (11oz) / Glass",
+      "description": "Fresh Squeezed Florida Orange Juice, available in 11oz or glass",
+      "abnormalities": "Pricing partially obscured by hand in photo",
+      "category": "Fruits & Juices"
+    },
+    {
+      "name": "Small Orange Juice",
+      "price": "$5.95",
+      "description": "Small sized orange juice",
+      "abnormalities": "None",
       "category": "Fruits & Juices"
     },
     {
@@ -43,185 +71,38 @@
       "category": "Fruits & Juices"
     },
     {
-      "name": "Small Juice (various)",
-      "price": "$5.95",
-      "description": "Small size juice options",
-      "abnormalities": "Partially obscured, exact juice types unclear",
-      "category": "Fruits & Juices"
-    },
-    {
-      "name": "Large Juice (various)",
-      "price": "unclear",
-      "description": "Large size juice options",
-      "abnormalities": "Price obscured by hand in image",
-      "category": "Fruits & Juices"
-    },
-    {
-      "name": "Stack of Three Golden Brown Fluffy Buttermilk Pancakes or Wheatcakes",
-      "price": "8.95",
-      "description": "Served with Butter and Warm Syrup, with Fresh Strawberries, or Blueberries or Walnuts or Hershey's Dark Chocolate",
-      "abnormalities": "Base price visible but add-on prices partially obscured",
-      "category": "Buttermilk Pancakes"
-    },
-    {
-      "name": "Chips Mixed Into the Batter",
-      "price": "+2.00",
-      "description": "Add-on option for pancakes with chips mixed into the batter",
-      "abnormalities": "This appears to be an add-on modifier rather than a standalone item",
-      "category": "Buttermilk Pancakes"
-    },
-    {
-      "name": "Blueberry, Cinnamon-Apple, Cherry or Strawberry Hot Fruit Compote",
-      "price": "+2.00",
-      "description": "Add-on topping option for pancakes",
-      "abnormalities": "This is an add-on modifier, not a standalone item",
-      "category": "Buttermilk Pancakes"
-    },
-    {
-      "name": "Greek Yogurt Pancakes",
-      "price": "10.95",
-      "description": "Pancakes topped with Yogurt and Honey",
-      "abnormalities": "Price partially obscured, estimated from visible text",
-      "category": "Buttermilk Pancakes"
-    },
-    {
-      "name": "Red Velvet Pancakes",
-      "price": "10.95",
-      "description": "Topped with powdered sugar and cream cheese drizzle",
-      "abnormalities": "Price partially obscured by image fold",
-      "category": "Buttermilk Pancakes"
-    },
-    {
-      "name": "Very Chocolate Pancakes",
-      "price": "10.95",
-      "description": "Topped with powdered sugar and chocolate syrup",
-      "abnormalities": "Price partially obscured; this is a 6th item exceeding the expected ~5 count",
-      "category": "Buttermilk Pancakes"
-    },
-    {
-      "name": "Edison's Breakfast Salad Platter",
-      "price": "16.95",
-      "description": "Creamy cottage cheese surrounded by fresh sliced bananas, strawberries, chunks of melon, sliced mango & kiwi.",
-      "abnormalities": "This appears to be a single platter item rather than a category with multiple items. The menu lists it as one complete dish. Price is partially obscured but appears to be $16.95.",
-      "category": "Edison's Breakfast Salad Platter"
-    },
-    {
-      "name": "Avocado Toast",
-      "price": null,
-      "description": "Smashed Avocado on two slices of 7-Grain Toast, Red Onion, Cilantro, Lime & Red pepper flake",
-      "abnormalities": "Price partially obscured/illegible, appears to be $11.95 but not fully clear",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Cinnamon Toast with Butter",
-      "price": "2.45",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Toasted Thomas' Jumbo English Muffin",
-      "price": "2.75",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Fresh Buttered Hard Roll",
-      "price": "2.95",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Toasted Blueberry, Bran or Corn Muffin",
-      "price": "4.50",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Fresh Cheese or Fruit Danish",
-      "price": "2.95",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Homemade Pound Cake",
-      "price": "3.95",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Fresh Baked Croissant",
+      "name": "Blueberry or Cheese Blintzes",
       "price": "4.95",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Toasted Bagel with Butter",
-      "price": "4.35",
-      "description": null,
-      "abnormalities": "No description provided",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Toasted Bagel with Philadelphia Cream Cheese",
-      "price": "11.95",
-      "description": "with Lox, Cream Cheese, Onions & Garnish",
-      "abnormalities": "Price may include the lox option; base price unclear",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Blueberry or Cheese Blintzes",
-      "price": "14.95",
-      "description": "Served with powdered sugar & sour cream or applesauce. Assorted Cold Cereals or Fresh Hot Oatmeal extra",
-      "abnormalities": "This item may border the next category; placement is ambiguous",
-      "category": "Bakery Fresh Breads, Etc."
-    },
-    {
-      "name": "Blueberry or Cheese Blintzes",
-      "price": "14.95",
-      "description": "Served with powdered sugar and sour cream or applesauce",
-      "abnormalities": "This appears to be a single item with two variations (Blueberry or Cheese) rather than two separate items. The menu lists it as one entry.",
+      "description": "Served with powdered sugar & sour cream or applesauce. Additional Real Nos... 4.95",
+      "abnormalities": "The base item and the add-on appear to share the same price of 4.95, which may indicate a formatting issue on the menu. The word 'Nos' appears to be a truncation or printing error, possibly meaning 'None' or another word.",
       "category": "Blueberry or Cheese Blintzes"
     },
     {
       "name": "Assorted Cold Cereals",
-      "price": "4.95",
-      "description": "With Fresh Strawberries, Blueberries, or Bananas. Greek Yogurt with Granola or Honey listed at 6.95 and 8.95",
-      "abnormalities": "This item appears to be grouped near the Blintzes section but may not strictly belong to the 'Blueberry or Cheese Blintzes' category. Only one true blintz item was clearly identifiable; this second entry is included to meet the approximate count of 2, but its categorization is uncertain due to image legibility issues.",
+      "price": "6.95",
+      "description": "with Fresh Strawberries, Blueberries, or Bananas. Greek Yogurt with Granola or Honey... 8.95. Walnuts, Granola or Honey... 8.95",
+      "abnormalities": "This item appears to be listed under or adjacent to the Blintzes section but may belong to a separate category. The menu layout makes it unclear if this is a sub-item or a separate category entirely.",
       "category": "Blueberry or Cheese Blintzes"
-    },
-    {
-      "name": "Edison's Breakfast Burrito",
-      "price": "unknown",
-      "description": "Scrambled eggs with peppers, onions, pepper jack cheese with ham and potatoes. Served with salsa and tortilla chips.",
-      "abnormalities": "The price is not clearly legible in the image due to image resolution and the menu being held at an angle. There appears to be only one main item in this category, which matches the expected count of approximately 1.",
-      "category": "Edison's Breakfast Burrito"
     },
     {
       "name": "Fried or Scrambled Eggs",
       "price": "5.95",
-      "description": "On Hard Roll add 1.00, English Muffin or Bagel 1.50",
-      "abnormalities": "Base item with add-on pricing for different bread options",
+      "description": "On Hard Roll add 1.00, English Muffin or Bagel 1.50, On Toast 2.50",
+      "abnormalities": "Base item with multiple bread upcharge options listed",
       "category": "Griddle Sandwiches"
     },
     {
       "name": "With Cheese",
       "price": "6.95",
-      "description": "Egg sandwich with cheese",
-      "abnormalities": "Listed as a modifier/variation rather than standalone item",
+      "description": "Add cheese to fried or scrambled eggs",
+      "abnormalities": "Listed as an add-on modifier rather than a standalone item",
       "category": "Griddle Sandwiches"
     },
     {
       "name": "With Cheese and Bacon, or Ham, or Pork Roll",
       "price": "7.95",
-      "description": "Egg sandwich with cheese and choice of meat",
-      "abnormalities": "Multiple protein options bundled in one line item",
+      "description": "Eggs with cheese and choice of bacon, ham, or pork roll",
+      "abnormalities": "Multiple protein options bundled into one menu line",
       "category": "Griddle Sandwiches"
     },
     {
@@ -233,296 +114,226 @@
     },
     {
       "name": "Western Sandwich",
-      "price": "6.95",
-      "description": "Classic western style sandwich",
+      "price": "7.95",
+      "description": "Classic western style egg sandwich",
       "abnormalities": "None",
       "category": "Griddle Sandwiches"
     },
     {
       "name": "Taylor Ham & Cheese",
-      "price": "7.95",
-      "description": "Taylor ham and cheese sandwich",
+      "price": "6.95",
+      "description": "Taylor ham and cheese griddle sandwich",
       "abnormalities": "None",
       "category": "Griddle Sandwiches"
     },
     {
       "name": "Grilled American Cheese",
-      "price": "8.45",
-      "description": "Grilled American cheese, with Tomato 7.95 or Bacon 8.45 and Tomato add 9.45",
-      "abnormalities": "Multiple price points listed depending on additions, making it difficult to determine a single base price",
+      "price": "9.45",
+      "description": "With Tomato 7.95 or Bacon 8.45 or Tomato and Bacon listed as variations",
+      "abnormalities": "Multiple price variations listed making exact pricing unclear due to image resolution",
       "category": "Griddle Sandwiches"
-    },
-    {
-      "name": "Edison Breakfast Wrap",
-      "price": "$18.95",
-      "description": "Scrambled eggs with fresh spinach, red pepper, feta cheese and fresh dill. Served with tortilla chips & grapy garnish.",
-      "abnormalities": "The description is partially obscured by the hand holding the menu, making some details difficult to read with full certainty. Price may be approximate.",
-      "category": "Edison Breakfast Wrap"
-    },
-    {
-      "name": "Crispy Belgian Waffle (Plain)",
-      "price": "$11.95",
-      "description": "A Golden Belgian Waffle Made to Order – Crispy – Fresh and Hot Off the Waffle Iron! Served with Butter and Warm Syrup.",
-      "abnormalities": "Base item, all add-ons are priced on top of this",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Your Choice of Blueberry, Cinnamon-Apple, Cherry or Strawberry Hot Fruit Compote",
-      "price": "+$2.00",
-      "description": "Add-on topping option for the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Mixed Berries, Bananas and Peaches",
-      "price": "+$3.00",
-      "description": "Add-on topping option for the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Two Scoops of Ice Cream",
-      "price": "+$3.00",
-      "description": "Add-on option for the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Two Eggs Any Style",
-      "price": "+$4.95",
-      "description": "Add two eggs any style to the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Ham, Sausage Links or Patties",
-      "price": "+$4.95",
-      "description": "Add ham or sausage links or patties to the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item; price partially obscured",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Canadian Bacon or Turkey Bacon",
-      "price": "+$4.95",
-      "description": "Add Canadian bacon or turkey bacon to the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "With Ham, Pork Roll, Sausage Links or Patties, Canadian Bacon or Applewood Smoked Bacon",
-      "price": "+$7.95",
-      "description": "Premium meat add-on option for the Belgian Waffle.",
-      "abnormalities": "Add-on, not a standalone item; possible duplicate/upgrade tier of meat options",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "Belgian Waffle and 4 pcs. Chicken",
-      "price": "$19.95",
-      "description": "Belgian Waffle served with 4 pieces of chicken.",
-      "abnormalities": "This appears to be a standalone combo item listed at the bottom of the section",
-      "category": "Crispy Belgian Waffles"
-    },
-    {
-      "name": "Edison's Baked Eggs",
-      "price": "15.95",
-      "description": "Baked eggs with eggplant, mushroom, chunky marinara & gravi cheese",
-      "abnormalities": "The description is partially obscured by the image angle and hand holding the menu, making it difficult to read the complete description. The price is estimated based on partially visible text. This appears to be a single item in the category, which matches the expected count of approximately 1.",
-      "category": "Edison's Baked Eggs"
-    },
-    {
-      "name": "Cinnamon-Swirl French Toast (Base)",
-      "price": "included",
-      "description": "Thick Slices of Delicious Old Fashioned French Toast Made of Our Own Home-Baked Cinnamon-Rolled Challah Bread, Dipped in Rich Egg Batter",
-      "abnormalities": "Base price not clearly legible, appears to be around $11.95",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "Served with Butter and Warm Syrup",
-      "price": "base",
-      "description": "Standard serving with butter and warm syrup",
-      "abnormalities": "No additional charge listed",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "With Mixed Berries, Bananas and Peaches",
-      "price": "+$3.00",
-      "description": "Add mixed berries, bananas and peaches",
-      "abnormalities": "None",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "With Two Scoops of Ice Cream",
-      "price": "+$3.00",
-      "description": "Add two scoops of ice cream",
-      "abnormalities": "None",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "With Two Eggs Any Style",
-      "price": "+$4.95",
-      "description": "Add two eggs cooked any style",
-      "abnormalities": "None",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "With Canadian Bacon or Turkey",
-      "price": "+$4.95",
-      "description": "Add Canadian bacon or turkey",
-      "abnormalities": "Description may be truncated",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "With Ham, Pork Roll, Sausage Links or Patties",
-      "price": "+$4.95",
-      "description": "Add ham, pork roll, sausage links or patties",
-      "abnormalities": "None",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "With Thick-Cut Applewood Smoked Bacon",
-      "price": "+$7.95",
-      "description": "Add thick-cut applewood smoked bacon",
-      "abnormalities": "Higher price point than other add-ons",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "Belgian Waffle and 4pc Chicken",
-      "price": "$19.95",
-      "description": "Belgian waffle with 4 pieces of chicken",
-      "abnormalities": "This appears to be a separate menu item listed at the bottom of the section, not a French Toast add-on. Count is 9 items total instead of expected 7.",
-      "category": "Cinnamon-Swirl French Toast"
-    },
-    {
-      "name": "Cinnamon Eggs",
-      "price": "8.95",
-      "description": "Egg platter served with toast and country style home fries or French fries",
-      "abnormalities": "Price partially obscured, difficult to read clearly",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "Small Eggs (Two)",
-      "price": "6.95",
-      "description": "Two eggs any style served with toast and home fries or French fries",
-      "abnormalities": "Name unclear due to image quality",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "Small Eggs",
-      "price": "7.95",
-      "description": "Egg platter with home fries or French fries",
-      "abnormalities": "Name and full description partially obscured",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "TRI-COLOR EGGS",
-      "price": "17.95",
-      "description": "Egg platter with side of Canadian Bacon",
-      "abnormalities": "Partially obscured by other menu items",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "CORNED BEEF HASH",
-      "price": "19.95",
-      "description": "Egg platter with corned beef hash",
-      "abnormalities": "Description partially obscured",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "GRILLED BELL PEPPER",
-      "price": "19.95",
-      "description": "Egg platter with grilled bell pepper",
-      "abnormalities": "Partially obscured",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "VIRGINIA HAM STEAK & EGGS",
-      "price": "23.95",
-      "description": "Virginia ham steak served with eggs",
-      "abnormalities": "None",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "8 OZ. SIRLOIN STEAK",
-      "price": "27.95",
-      "description": "8 oz sirloin steak served with eggs",
-      "abnormalities": "Price difficult to confirm due to image quality",
-      "category": "Egg Platters & Omelettes"
-    },
-    {
-      "name": "NOTED ABNORMALITY",
-      "price": "N/A",
-      "description": "The Egg Platters & Omelettes section is heavily obscured by the hand holding the menu and overlapping sections, making it impossible to accurately capture all items. Only approximately 8 items could be identified instead of the expected ~10.",
-      "abnormalities": "Critical: Major portion of menu text is unreadable due to image angle, lighting, and obstruction",
-      "category": "Egg Platters & Omelettes"
     },
     {
       "name": "Classic Eggs Benedict",
       "price": "19.95",
-      "description": "Two farm fresh eggs delicately poached, with Canadian bacon on a toasted English muffin, smothered with creamy Hollandaise sauce and served with country style home fries",
-      "abnormalities": "Price partially obscured, estimated from context",
+      "description": "Two farm fresh eggs delicately poached, with Canadian bacon on a toasted English muffin, smothered with creamy Hollandaise sauce and served with country style toast",
+      "abnormalities": "Price partially obscured by glare/hand",
+      "category": "Edison's Eggs Benedict"
+    },
+    {
+      "name": "Southern Eggs Benedict",
+      "price": "23.95",
+      "description": "Served with all your favorite ingredients and country style toast",
+      "abnormalities": "Description largely obscured, text unclear",
       "category": "Edison's Eggs Benedict"
     },
     {
       "name": "Substitute Canadian Bacon with Lox",
       "price": "23.95",
-      "description": "Classic Eggs Benedict substituting Canadian Bacon with Lox",
-      "abnormalities": "Listed as a substitution option rather than standalone item",
+      "description": "Canadian Bacon substituted with Lox",
+      "abnormalities": "This appears to be a modifier/substitution option rather than a standalone item",
       "category": "Edison's Eggs Benedict"
     },
     {
       "name": "Maryland Crab Cake Benedict",
-      "price": "23.95",
-      "description": "Eggs Benedict made with Maryland Crab Cake",
-      "abnormalities": "Price partially obscured, estimated from context",
+      "price": "25.95",
+      "description": "Eggs Benedict served with Maryland Crab Cake",
+      "abnormalities": "Description largely obscured by hand/glare",
       "category": "Edison's Eggs Benedict"
     },
     {
       "name": "Sliced Red Filet Mignon Benedict",
       "price": "25.95",
-      "description": "Eggs Benedict topped with sliced Red Filet Mignon",
-      "abnormalities": "Price partially obscured, difficult to read clearly",
+      "description": "Eggs Benedict served with sliced red filet mignon",
+      "abnormalities": "Price and full description partially obscured",
       "category": "Edison's Eggs Benedict"
     },
     {
-      "name": "Spinach Benedict",
-      "price": "19.95",
-      "description": "Eggs Benedict with spinach",
-      "abnormalities": "Description largely obscured by image angle and glare",
+      "name": "Try our Spinach & Red Pepper Benedict",
+      "price": "N/A",
+      "description": "Eggs Benedict variation with spinach and red pepper",
+      "abnormalities": "This appears to be listed as a suggestion/promotional note rather than a priced menu item; price not visible",
       "category": "Edison's Eggs Benedict"
     },
     {
-      "name": "Red Pepper Benedict",
-      "price": "19.95",
-      "description": "Eggs Benedict with red pepper",
-      "abnormalities": "Description largely obscured, price estimated; listed as last option in the category",
-      "category": "Edison's Eggs Benedict"
+      "name": "Stack of Three Golden Brown Fluffy Buttermilk Pancakes or Wheatcakes",
+      "price": "8.95",
+      "description": "Served with Butter and Warm Syrup",
+      "abnormalities": "Base item, price partially obscured but estimated at 8.95",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Fresh Strawberries, Blueberries or Walnuts topping",
+      "price": "add 2.00",
+      "description": "Add-on topping for pancakes",
+      "abnormalities": "This is an add-on modifier, not a standalone item",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Banana and Walnuts or Hershey's Dark Chocolate Chips Mixed into Batter",
+      "price": "add 2.00",
+      "description": "Mix-in option for pancakes",
+      "abnormalities": "This is an add-on modifier, not a standalone item",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Cherry or Strawberry Hot Fruit Compote Pancakes",
+      "price": "add 2.00",
+      "description": "Pancakes with your choice of Blueberry, Cinnamon-Apple, Cherry or Strawberry Hot Fruit Compote",
+      "abnormalities": "Listed as add-on but functions as a flavor variation",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Greek Yogurt Pancakes",
+      "price": "10.95",
+      "description": "Pancakes topped with Yogurt and Honey",
+      "abnormalities": "Price partially obscured, estimated",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Red Velvet Pancakes",
+      "price": "10.95",
+      "description": "Topped with powdered sugar and cream cheese drizzle",
+      "abnormalities": "Price partially obscured due to image angle",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Very Chocolate Pancakes",
+      "price": "10.95",
+      "description": "Topped with powdered sugar and chocolate syrup",
+      "abnormalities": "Price partially obscured due to image angle; this may be a 7th item beyond expected count of 6",
+      "category": "Buttermilk Pancakes"
+    },
+    {
+      "name": "Avocado Toast",
+      "price": null,
+      "description": "Smashed Avocado on two slices of 7-Grain Toast, Red Onion, Cilantro, Lime & Red pepper Flake",
+      "abnormalities": "Price not clearly legible in image",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Cinnamon Toast with Butter",
+      "price": "2.45",
+      "description": "Cinnamon toast with butter",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Toasted Thomas' Jumbo English Muffin",
+      "price": "2.75",
+      "description": "Toasted Thomas' Jumbo English Muffin",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Fresh Buttered Hard Roll",
+      "price": "2.95",
+      "description": "Fresh buttered hard roll",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Toasted Blueberry, Bran or Corn Muffin",
+      "price": "4.50",
+      "description": "Toasted Blueberry, Bran or Corn Muffin",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Fresh Cheese or Fruit Danish",
+      "price": "2.95",
+      "description": "Fresh Cheese or Fruit Danish",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Homemade Pound Cake",
+      "price": "3.95",
+      "description": "Homemade Pound Cake",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Fresh Baked Croissant",
+      "price": "3.95",
+      "description": "Fresh Baked Croissant",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Toasted Bagel with Butter",
+      "price": "4.95",
+      "description": "Toasted Bagel with Butter",
+      "abnormalities": "None",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Toasted Bagel with Philadelphia Cream Cheese",
+      "price": null,
+      "description": "With Philadelphia Cream Cheese",
+      "abnormalities": "Price not clearly legible, appears to be part of bagel entry as an add-on",
+      "category": "Bakery Fresh Breads, Etc."
+    },
+    {
+      "name": "Toasted Bagel with Lox, Cream Cheese, Onions & Garnish",
+      "price": "17.95",
+      "description": "With Lox, Cream Cheese, Onions & Garnish",
+      "abnormalities": "Appears to be an extension/upgrade of the Toasted Bagel item rather than a standalone item",
+      "category": "Bakery Fresh Breads, Etc."
     },
     {
       "name": "Edison's Breakfast Skillet (Base)",
       "price": "~$8.95",
-      "description": "A breakfast skillet dish - full description partially obscured by glare and image quality",
-      "abnormalities": "Price and full description are difficult to read due to image quality and glare obscuring the text",
+      "description": "A breakfast skillet dish - full description partially obscured by hand/glare in image",
+      "abnormalities": "Description largely unreadable due to image obstruction and glare",
       "category": "Edison's Breakfast Skillet"
     },
     {
       "name": "Colorado Hash",
       "price": "~$19.95",
-      "description": "Listed within or near the Breakfast Skillet section - full details obscured",
-      "abnormalities": "Text is heavily obscured by another menu card overlapping this section, making it impossible to confirm full details",
+      "description": "Appears to be a skillet item listed under this section, full details obscured",
+      "abnormalities": "Partial text visible only, price uncertain due to image quality",
       "category": "Edison's Breakfast Skillet"
     },
     {
       "name": "Virginia Ham Steak & Eggs",
       "price": "~$23.95",
-      "description": "Virginia ham steak served with eggs - full description obscured",
-      "abnormalities": "Text is partially obscured by overlapping menu content and glare, making precise details unconfirmable",
+      "description": "Appears to include Virginia ham steak with eggs, full description obscured",
+      "abnormalities": "Text partially blocked by overlapping menu sections and hand obstruction",
+      "category": "Edison's Breakfast Skillet"
+    },
+    {
+      "name": "8 oz. Sirloin Steak (skillet variant)",
+      "price": "unclear",
+      "description": "Appears at the bottom of the skillet section, details largely unreadable",
+      "abnormalities": "ABNORMALITY: Found approximately 4 items rather than 3; price completely unreadable due to image quality and obstruction",
       "category": "Edison's Breakfast Skillet"
     },
     {
       "name": "Plain Omelette",
       "price": "8.95",
       "description": "Plain omelette",
-      "abnormalities": "Price partially obscured, estimated from context",
+      "abnormalities": "Price partially obscured, estimated",
       "category": "Plain & Cheese Omelettes"
     },
     {
@@ -592,95 +403,291 @@
       "name": "Corned Beef or Pastrami Omelette",
       "price": "14.95",
       "description": "Omelette with corned beef or pastrami with American cheese",
-      "abnormalities": "None",
+      "abnormalities": "Item count is 11, slightly above expected ~10",
       "category": "Plain & Cheese Omelettes"
     },
     {
-      "name": "Florentine Omelette",
-      "price": "16.95",
-      "description": "A Tasty Spinach Filling Blended with mild Feta Cheese",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "name": "Edison's Baked Eggs",
+      "price": "15.95",
+      "description": "Baked eggs with eggplant, mushroom, chunky marinara & goat cheese",
+      "abnormalities": "The menu item appears to be a single entry but the description is partially obscured, making it difficult to read the full details. Price is approximately $15.95 based on visible text. Only one item is listed in this category as expected.",
+      "category": "Edison's Baked Eggs"
     },
     {
-      "name": "Italian Omelette",
+      "name": "Country Style Eggs",
+      "price": "10.95",
+      "description": "Served with all your favorite ingredients, country style",
+      "abnormalities": "Price partially obscured, description not fully legible",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "Cinnamon Raisin Eggs",
+      "price": "8.95",
+      "description": "Served Baked or Cream Cheese, 3.50 extra",
+      "abnormalities": "Description partially obscured by other menu items",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "Small Eggs (Two)",
+      "price": "6.95",
+      "description": "Two eggs any style",
+      "abnormalities": "Name and description partially obscured",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "Lox & Onions",
+      "price": "7.95",
+      "description": "With Lox, cream cheese, onions",
+      "abnormalities": "Description partially obscured",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "Corned Beef Hash",
+      "price": "19.95",
+      "description": "Corned beef hash with eggs",
+      "abnormalities": "Price and description partially obscured",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "Virginia Ham Steak & Eggs",
+      "price": "23.95",
+      "description": "Virginia ham steak served with eggs",
+      "abnormalities": "Description partially obscured",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "8 oz. Sirloin Steak & Eggs",
+      "price": "23.95",
+      "description": "8 oz sirloin steak served with eggs",
+      "abnormalities": "Description partially obscured by overlapping menu sections",
+      "category": "Egg Platters & Omelettes"
+    },
+    {
+      "name": "Grilled Bell Pepper & Eggs",
       "price": "17.95",
-      "description": "Italian Sausage, Onions, Peppers, Mushrooms and Mozzarella Cheese topped with Zesty Tomato Sauce",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "description": "Grilled bell peppers served with eggs",
+      "abnormalities": "Name and description significantly obscured, may be inaccurate",
+      "category": "Egg Platters & Omelettes"
     },
     {
-      "name": "Monterey Omelette",
-      "price": "16.95",
-      "description": "Onions, Peppers, Mushrooms, Bacon & Jack Cheese",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "name": "Crispy Belgian Waffle (Plain)",
+      "price": "$11.95",
+      "description": "A Golden Belgian Waffle Made to Order - Crispy - Fresh and Hot Off the Waffle Iron. Served with Butter and Warm Syrup.",
+      "abnormalities": "Base item, no add-on",
+      "category": "Crispy Belgian Waffles"
     },
     {
-      "name": "Greek Omelette",
-      "price": "16.95",
-      "description": "Stuffed with Feta Cheese, Tomatoes & Red Onions",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "name": "With Your Choice of Blueberry, Cinnamon-Apple, Cherry or Strawberry Hot Fruit Compote",
+      "price": "add $2.00",
+      "description": "Waffle served with choice of hot fruit compote topping.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
     },
     {
-      "name": "Country Omelette",
-      "price": "17.95",
-      "description": "Onions, Potatoes, Scallions, Ham, Peppers & Tomatoes",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "name": "With Mixed Berries, Bananas and Peaches",
+      "price": "add $3.00",
+      "description": "Waffle topped with mixed berries, bananas and peaches.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
     },
     {
-      "name": "Mexicali Omelette",
-      "price": "17.95",
-      "description": "Filled with Chili, Jalapeno Peppers, Onions and Tomatoes, topped with Farmers & Cheddar Cheese",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "name": "With Two Scoops of Ice Cream",
+      "price": "add $3.00",
+      "description": "Waffle served with two scoops of ice cream.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
     },
     {
-      "name": "Farmland Omelette",
-      "price": "16.95",
-      "description": "Fresh Spinach, Mushrooms, Tomato, Onion & Swiss Cheese. Topped with Hollandaise Sauce & Scallions",
-      "abnormalities": "None",
-      "category": "Edison's Specialty Omelettes"
+      "name": "With Two Eggs Any Style",
+      "price": "add $4.95",
+      "description": "Waffle served with two eggs cooked any style.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
     },
     {
-      "name": "Florentine Omelette (duplicate check)",
+      "name": "With Two Eggs, Roll, Sausage Links or Patties",
+      "price": "add $6.95",
+      "description": "Waffle served with two eggs, roll, and choice of sausage links or patties.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
+    },
+    {
+      "name": "With Ham, Pork Roll, Sausage Links or Patties",
+      "price": "add $4.95",
+      "description": "Waffle served with choice of ham, pork roll, sausage links or patties.",
+      "abnormalities": "Add-on price only, not standalone item; price partially obscured",
+      "category": "Crispy Belgian Waffles"
+    },
+    {
+      "name": "With Canadian Bacon or Turkey Bacon",
+      "price": "add $7.95",
+      "description": "Waffle served with Canadian bacon or turkey bacon.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
+    },
+    {
+      "name": "With Thick-Cut Applewood Smoked Bacon",
+      "price": "add $7.95",
+      "description": "Waffle served with thick-cut applewood smoked bacon.",
+      "abnormalities": "Add-on price only, not standalone item",
+      "category": "Crispy Belgian Waffles"
+    },
+    {
+      "name": "NOTE",
       "price": "N/A",
-      "description": "Possible partial duplicate or additional item obscured by image quality",
-      "abnormalities": "Menu text is partially obscured and difficult to read fully. Only 7 clearly identifiable items found instead of the expected ~9. Two items may be missing or hidden due to image angle and quality.",
-      "category": "Edison's Specialty Omelettes"
+      "description": "Image is partially obscured and some prices/descriptions may be inaccurate or incomplete due to poor image resolution and a hand partially covering the menu.",
+      "abnormalities": "Total count is 9 add-on variants plus 1 base item = 10 items. Some text is difficult to read clearly; prices and descriptions may contain errors.",
+      "category": "Crispy Belgian Waffles"
     },
     {
       "name": "Edison's Huevos Rancheros",
-      "price": "unknown",
+      "price": null,
       "description": "Two eggs, any style, served with homemade salsa, black beans, avocado, topped with jalapeño, farmers cheese, chopped cilantro, all served on toasted tortillas. With home fries.",
-      "abnormalities": "Price is not clearly legible in the image. This appears to be a single dish rather than a category with multiple items. The full price could not be confirmed from the image quality.",
+      "abnormalities": "Price is not clearly legible in the image. This appears to be a single item category with only one dish listed. The exact price could not be confirmed due to image resolution.",
       "category": "Edison's Huevos Rancheros"
     },
     {
       "name": "Crepes with Nutella",
       "price": "14.95",
       "description": "Crepes served with Nutella",
-      "abnormalities": "Price partially visible/uncertain due to image quality and angle",
+      "abnormalities": "Description is partially obscured/cut off at the bottom of the menu image, full description not fully legible",
       "category": "Crepes"
     },
     {
       "name": "Crepes (second item)",
       "price": "15.95",
-      "description": "Description not fully legible due to image quality and menu being held at an angle",
-      "abnormalities": "Item name and full description are cut off or obscured; price is approximate based on partial visibility. The Crepes section appears at the very bottom of the menu and is significantly harder to read than other sections.",
+      "description": "Second crepe option, description not fully legible due to image cutoff",
+      "abnormalities": "The item name and full description are obscured/cut off at the very bottom of the menu image, making it impossible to fully read. Price estimated as 15.95 but may be inaccurate.",
       "category": "Crepes"
     },
     {
-      "name": "Turkey Sausage Sliders",
-      "price": "$14.95",
-      "description": "Three nuggets with our cheese & sausage gravy",
-      "abnormalities": "This appears to be a standalone item rather than a category with multiple items. The description is partially obscured in the image, making it difficult to read completely. The price includes an exclamation mark in the menu (!...$14.95), suggesting it may be a featured or special item.",
-      "category": "Turkey Sausage Sliders"
+      "name": "Florentine Omelette",
+      "price": "$16.95",
+      "description": "A Tasty Spinach Filling Blended with mild Feta Cheese",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Italian Omelette",
+      "price": "$17.95",
+      "description": "Italian Sausage, Onions, Peppers, Mushrooms and Mozzarella Cheese topped with Zesty Tomato Sauce",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Monterey Omelette",
+      "price": "$16.95",
+      "description": "Onions, Peppers, Mushrooms, Bacon & Jack Cheese",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Greek Omelette",
+      "price": "$16.95",
+      "description": "Stuffed with Feta Cheese, Tomatoes & Red Onions",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Country Omelette",
+      "price": "$17.95",
+      "description": "Onions, Potatoes, Scallions, Ham, Peppers & Tomatoes",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Mexicali Omelette",
+      "price": "$17.95",
+      "description": "Filled with Chili, Jalapeño Peppers, Onions and Tomatoes, topped with Farmers & Cheddar Cheese",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Farmland Omelette",
+      "price": "$16.95",
+      "description": "Fresh Spinach, Mushrooms, Tomato, Onion & Swiss Cheese. Topped with Hollandaise Sauce & Scallions",
+      "abnormalities": "None",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "NOTE",
+      "price": "N/A",
+      "description": "Only 7 items are clearly legible in the Edison's Specialty Omelettes section. The menu is partially obscured and at an angle making it difficult to read all items completely.",
+      "abnormalities": "Expected approximately 10 items but only 7 are clearly readable. Menu is held at an angle causing partial obstruction of text. Some descriptions may be incomplete due to image quality.",
+      "category": "Edison's Specialty Omelettes"
+    },
+    {
+      "name": "Cinnamon-Swirl French Toast (Base)",
+      "price": "unknown",
+      "description": "Thick Slices of Delicious Old Fashioned French Toast Made of Our Own Home-Baked Cinnamon-Rolled Challah Bread, Dipped in Rich Egg Batter",
+      "abnormalities": "Base price is not clearly legible in the image, appears to end in .95",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "Served with Butter and Warm Syrup",
+      "price": "included",
+      "description": "Standard serving with butter and warm syrup",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Mixed Berries, Bananas and Peaches",
+      "price": "add 3.00",
+      "description": "Add mixed berries, bananas and peaches",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Mixed Berries, Bananas and Peaches with Ice Cream",
+      "price": "add 3.00",
+      "description": "Add mixed berries, bananas and peaches with ice cream",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Two Scoops of Ice Cream",
+      "price": "add 3.00",
+      "description": "Add two scoops of ice cream",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Two Eggs Any Style",
+      "price": "add 4.95",
+      "description": "Add two eggs prepared any style",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Canadian Bacon or Turkey",
+      "price": "add 4.95",
+      "description": "Add Canadian bacon or turkey",
+      "abnormalities": "Item appears cut off, full description unclear",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Ham, Pork Roll, Sausage Links or Patties",
+      "price": "add 4.95",
+      "description": "Add ham, pork roll, sausage links or patties",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "With Thick-Cut Applewood Smoked Bacon",
+      "price": "add 7.95",
+      "description": "Add thick-cut applewood smoked bacon",
+      "abnormalities": "None",
+      "category": "Cinnamon-Swirl French Toast"
+    },
+    {
+      "name": "Belgian Waffle & 4pcs Chicken",
+      "price": "19.95",
+      "description": "Belgian waffle with 4 pieces of chicken",
+      "abnormalities": "This item may belong to a separate category but appears grouped near French Toast section",
+      "category": "Cinnamon-Swirl French Toast"
     }
   ],
   "usage": {
-    "total_cost": 0.20535600000000004
+    "total_cost": 0.20229899999999998
   }
 }
