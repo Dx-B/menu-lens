@@ -1,18 +1,18 @@
 [
   {
     "name": "Fruits & Juices",
-    "item_count": 8,
-    "abnormalities": "none"
+    "item_count": 9,
+    "abnormalities": "Includes a promotional insert for fresh squeezed Florida OJ with pricing callout"
   },
   {
     "name": "Buttermilk Pancakes",
     "item_count": 6,
-    "abnormalities": "Includes Liege Waffles, Red Velvet Pancakes, and Very Chocolate Pancakes as sub-items with photos"
+    "abnormalities": "Includes sub-items like Red Velvet Pancakes and Very Chocolate Pancakes with separate photo callouts"
   },
   {
     "name": "Edison's Breakfast Salad Platter",
     "item_count": 1,
-    "abnormalities": "Single featured item rather than a category"
+    "abnormalities": "Single featured item, unusually isolated as its own category"
   },
   {
     "name": "Bakery Fresh Breads, Etc.",
@@ -22,12 +22,12 @@
   {
     "name": "Blueberry or Cheese Blintzes",
     "item_count": 2,
-    "abnormalities": "Very small category, almost a single item listing"
+    "abnormalities": "Very small category, essentially a single dish with two variants"
   },
   {
     "name": "Edison's Breakfast Burrito",
     "item_count": 1,
-    "abnormalities": "Single featured item rather than a category"
+    "abnormalities": "Single item category"
   },
   {
     "name": "Griddle Sandwiches",
@@ -37,27 +37,32 @@
   {
     "name": "Edison Breakfast Wrap",
     "item_count": 1,
-    "abnormalities": "Single featured item rather than a category"
+    "abnormalities": "Single item category"
   },
   {
     "name": "Crispy Belgian Waffles",
     "item_count": 10,
-    "abnormalities": "none"
+    "abnormalities": "Many add-on options listed as separate line items inflating count"
   },
   {
     "name": "Edison's Baked Eggs",
     "item_count": 1,
-    "abnormalities": "Single featured item rather than a category"
+    "abnormalities": "Single item category"
   },
   {
     "name": "Cinnamon-Swirl French Toast",
     "item_count": 8,
-    "abnormalities": "none"
+    "abnormalities": "Add-on options listed as separate lines similar to waffles"
   },
   {
     "name": "Crepes",
     "item_count": 2,
-    "abnormalities": "Partially cut off at bottom of menu"
+    "abnormalities": "Partially cut off at bottom of menu, full item count unclear"
+  },
+  {
+    "name": "Egg Platters & Omelettes",
+    "item_count": 10,
+    "abnormalities": "Partially obscured by hand holding menu"
   },
   {
     "name": "Edison's Eggs Benedict",
@@ -65,24 +70,14 @@
     "abnormalities": "none"
   },
   {
-    "name": "Egg Platters & Omelettes",
-    "item_count": 8,
-    "abnormalities": "Partially obscured by hand holding menu"
-  },
-  {
     "name": "Edison's Breakfast Skillet",
-    "item_count": 4,
+    "item_count": 3,
     "abnormalities": "Partially obscured"
   },
   {
-    "name": "Plain & Cheese Omelettes",
-    "item_count": 12,
-    "abnormalities": "none"
-  },
-  {
-    "name": "Edison's Huevos Rancheros",
-    "item_count": 1,
-    "abnormalities": "Single featured item rather than a category"
+    "name": "Omelettes",
+    "item_count": 18,
+    "abnormalities": "Very large category spanning plain through specialty omelettes"
   },
   {
     "name": "Edison's Specialty Omelettes",
@@ -90,8 +85,13 @@
     "abnormalities": "none"
   },
   {
+    "name": "Edison's Huevos Rancheros",
+    "item_count": 1,
+    "abnormalities": "Single item category"
+  },
+  {
     "name": "Turkey Sausage Sliders",
     "item_count": 1,
-    "abnormalities": "Single featured item, appears isolated at bottom of menu"
+    "abnormalities": "Appears as a standalone callout item, unusual placement"
   }
 ]

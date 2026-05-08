@@ -1,16 +1,27 @@
+# //////////////////////////////////////////////////////////////////////// Dotenv
+from dotenv import load_dotenv
+load_dotenv()
+
+# //////////////////////////////////////////////////////////////////////// Primary Imports
 import anthropic
 import base64
 import os
+
+# //////////////////////////////////////////////////////////////////////// Helper Imports
 import copy
-from dotenv import load_dotenv
 import json
-load_dotenv()
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
+
+# //////////////////////////////////////////////////////////////////////// Helper Declarations
+cost_lock = threading.Lock() # Parallel Race Condition Locking
 
 # //////////////////////////////////////////////////////////////////////// Setup
 
 # Global Variables
 SHOW_THINKING = False
-COST_MODE = True # On by default. Outputs the cost of an API call before proceeding with data parsing. Disabling this skips verification entirely. (useful for batch calls but watch API usage)
+COST_MODE = True # On by default. Outputs the cost range of an API call before proceeding with data parsing. Disabling this skips verification entirely. (useful for batch calls but watch API usage)
+USE_MULTITHREADING = False
 GLOBAL_OUTPUT_TOKEN_BUDGET = 16000
 GLOBAL_THINKING_TOKEN_BUDGET = 8000
 GLOBAL_COST = 0
@@ -115,20 +126,19 @@ def clean_json_response(raw):
 
 def add_global_cost(cost):
     global GLOBAL_COST
-    GLOBAL_COST += cost
+    with cost_lock:
+        GLOBAL_COST += cost
 
 def add_agent_cost(input_tokens, output_tokens, total, ifc):
     global GLOBAL_AGENT_TOTAL_TOKEN_COST
-    GLOBAL_AGENT_TOTAL_TOKEN_COST += total
-
     global GLOBAL_AGENT_TOKEN_INPUT_COST
-    GLOBAL_AGENT_TOKEN_INPUT_COST += input_tokens
-
     global GLOBAL_AGENT_TOKEN_OUTPUT_COST
-    GLOBAL_AGENT_TOKEN_OUTPUT_COST += output_tokens
-
     global GLOBAL_AGENT_INTERNAL_FINAL_COST
-    GLOBAL_AGENT_INTERNAL_FINAL_COST += ifc
+    with cost_lock:
+        GLOBAL_AGENT_TOKEN_INPUT_COST += input_tokens
+        GLOBAL_AGENT_TOKEN_OUTPUT_COST += output_tokens
+        GLOBAL_AGENT_TOTAL_TOKEN_COST += total
+        GLOBAL_AGENT_INTERNAL_FINAL_COST += ifc
 
 
 
@@ -165,7 +175,7 @@ def extract_section(section_name, expected_count): # Retrieves the input section
 def process_data(response):
 
     # Cost Analytics for first call
-    print("First Call")
+    print("Stage 1: Section Discovery")
     print(f"Main Agent Token Usage: Input: {response.usage.input_tokens} OUTPUT: {response.usage.output_tokens} TOTAL: {response.usage.input_tokens + response.usage.output_tokens} IFC: $ {estimate_cost(response.usage.input_tokens, response.usage.output_tokens)}")
 
     # Always save raw response first
@@ -177,10 +187,22 @@ def process_data(response):
         menu_data = json.loads(raw)
 
         all_items = []
-        print("Second Call")
-        for section in menu_data:
-            items = extract_section(section["name"], section["item_count"])
-            all_items.extend(items)
+        print(f"Stage 2: Parallel Section Extraction | Multithreading: {USE_MULTITHREADING}")
+        if USE_MULTITHREADING:
+            # Parallel
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                futures = {
+                    executor.submit(extract_section, section["name"], section["item_count"]) : section
+                    for section in menu_data
+                }
+                for future in as_completed(futures):
+                    items = future.result()
+                    all_items.extend(items)
+        else:
+            # Iterator
+            for section in menu_data:
+                items = extract_section(section["name"], section["item_count"])
+                all_items.extend(items)
         print(f"Total Sub-Agent Token Usage: Input: {GLOBAL_AGENT_TOKEN_INPUT_COST} OUTPUT: {GLOBAL_AGENT_TOKEN_OUTPUT_COST} TOTAL: {GLOBAL_AGENT_TOTAL_TOKEN_COST} IFC: $ {GLOBAL_AGENT_INTERNAL_FINAL_COST}")
 
         # Output JSON
