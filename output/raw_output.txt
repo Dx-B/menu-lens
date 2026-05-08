@@ -1,17 +1,97 @@
 [
   {
-    "name": "Family Style Appetizers",
-    "item_count": 3,
+    "name": "Fruits & Juices",
+    "item_count": 8,
     "abnormalities": "none"
   },
   {
-    "name": "Salad Course",
-    "item_count": 1,
-    "abnormalities": "Only one salad option with no choice"
+    "name": "Buttermilk Pancakes",
+    "item_count": 6,
+    "abnormalities": "Includes Liege Waffles, Red Velvet Pancakes, and Very Chocolate Pancakes as sub-items with photos"
   },
   {
-    "name": "Entree Options",
-    "item_count": 3,
-    "abnormalities": "Guests must choose one entree from the three options"
+    "name": "Edison's Breakfast Salad Platter",
+    "item_count": 1,
+    "abnormalities": "Single featured item rather than a category"
+  },
+  {
+    "name": "Bakery Fresh Breads, Etc.",
+    "item_count": 11,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Blueberry or Cheese Blintzes",
+    "item_count": 2,
+    "abnormalities": "Very small category, almost a single item listing"
+  },
+  {
+    "name": "Edison's Breakfast Burrito",
+    "item_count": 1,
+    "abnormalities": "Single featured item rather than a category"
+  },
+  {
+    "name": "Griddle Sandwiches",
+    "item_count": 7,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Edison Breakfast Wrap",
+    "item_count": 1,
+    "abnormalities": "Single featured item rather than a category"
+  },
+  {
+    "name": "Crispy Belgian Waffles",
+    "item_count": 10,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Edison's Baked Eggs",
+    "item_count": 1,
+    "abnormalities": "Single featured item rather than a category"
+  },
+  {
+    "name": "Cinnamon-Swirl French Toast",
+    "item_count": 8,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Crepes",
+    "item_count": 2,
+    "abnormalities": "Partially cut off at bottom of menu"
+  },
+  {
+    "name": "Edison's Eggs Benedict",
+    "item_count": 6,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Egg Platters & Omelettes",
+    "item_count": 8,
+    "abnormalities": "Partially obscured by hand holding menu"
+  },
+  {
+    "name": "Edison's Breakfast Skillet",
+    "item_count": 4,
+    "abnormalities": "Partially obscured"
+  },
+  {
+    "name": "Plain & Cheese Omelettes",
+    "item_count": 12,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Edison's Huevos Rancheros",
+    "item_count": 1,
+    "abnormalities": "Single featured item rather than a category"
+  },
+  {
+    "name": "Edison's Specialty Omelettes",
+    "item_count": 9,
+    "abnormalities": "none"
+  },
+  {
+    "name": "Turkey Sausage Sliders",
+    "item_count": 1,
+    "abnormalities": "Single featured item, appears isolated at bottom of menu"
   }
 ]

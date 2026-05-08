@@ -192,7 +192,7 @@ def process_data(response):
         }
         
         with open(os.path.join(output_dir, OUTPUT_FILE), "w") as f:
-            json.dump(output, f, indent=2)
+            json.dump(output, f, indent=2, ensure_ascii=False)
             
         print("\nSuccess. \n")
     except json.JSONDecodeError as e:
