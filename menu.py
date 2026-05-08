@@ -33,8 +33,9 @@ output_dir = "output"
 os.makedirs(output_dir, exist_ok=True)
 OUTPUT_FILE = "output.json"
 RAW_OUTPUT_FILE = "raw_output.txt"
+TRANSLATED_OUTPUT = "translated_output.json"
 
-MOCK_PHASE_1 = False # True = Read from Cache Mode, False = API call directly
+MOCK_PHASE_1 = True # True = Read from Cache Mode, False = API call directly
 MOCK_PHASE_2 = True # True = Read from Cache Mode, False = API call directly
 PHASE1_CACHE = "output/phase1_cache.json"
 PHASE2_CACHE = "output/phase2_cache.json"
@@ -110,6 +111,11 @@ extract_params = {
     ],
 }
 
+base_params = {
+    "model": "claude-sonnet-4-6",
+    "max_tokens": GLOBAL_OUTPUT_TOKEN_BUDGET if SHOW_THINKING else 4096,
+}
+
 cost_params = {
     "model": request_params["model"],
     "messages": request_params["messages"]
@@ -181,6 +187,75 @@ def run_phase2(menu_data):
 
     return all_items
 
+def translate(language, untranslated_items): # Retrieves the input section items into a dictionary. INPUT: sections dict (section name, item count? as a expected length), menu.jpg, client OUTPUT: JSON
+    # Deep copy so we don't mutate the global
+    local_params = copy.deepcopy(base_params)
+
+    messages = [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": (
+                        f"Translate the following menu item into {language}. "
+                        "Translate only the name, description, and category fields. "
+                        "Keep price and abnormalities exactly as they are. "
+                        "Return only valid JSON representing a single item with fields: name, price, description, abnormalities, category. "
+                        f"Item: {json.dumps(untranslated_items, ensure_ascii=False)}"
+                    )
+                }
+            ]
+        }
+    ]
+    
+    local_params["messages"] = messages
+    
+    try:
+        response = client.messages.create(**local_params)
+
+        print(f"Local Translator Agent Token Usage: Input: {response.usage.input_tokens} Output:  {response.usage.output_tokens} Total:  {response.usage.input_tokens + response.usage.output_tokens} IFC: $ {estimate_cost(response.usage.input_tokens, response.usage.output_tokens)}")
+        add_global_cost(estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
+        add_agent_cost(response.usage.input_tokens, response.usage.output_tokens, response.usage.input_tokens + response.usage.output_tokens, estimate_cost(response.usage.input_tokens, response.usage.output_tokens))
+    
+    except Exception as e:
+        print(f"Phase 3 Error: Local Translator Agent: {e}") 
+        return []
+    
+    translated_items = clean_json_response(response.content[0].text)
+    
+    return json.loads(translated_items)
+
+def run_translator_phase(language, cache):
+    translated_items = []
+    try:
+        with open(cache, "r", encoding="utf-8") as f:
+            untranslated_items = json.load(f)
+        print("Phase 3: Parallel Translation -- Cache Read Successful")
+    except FileNotFoundError:
+        print("Phase 3: Parallel Translation -- Cache not found. Populate with the API first. [Failed to find {cache} at {os.path.abspath(cache)}].")
+        return []
+    
+    if USE_MULTITHREADING:
+        print(f"Stage 3: Parallel Translation | Multithreading: {USE_MULTITHREADING}")
+        # Parallel
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = {
+                executor.submit(translate, language, item) : item
+                for item in untranslated_items
+            }
+            for future in as_completed(futures):
+                item = future.result()
+                translated_items.append(item)
+    else:
+        # Iterator, This should never be used unless directly testing for time comparison. It doesn't even work.
+        for item in untranslated_items:
+            translated_items.append(translate(language, item))
+
+    translated_items = [item for item in translated_items if item]
+    
+    return translated_items
+
 def write_output(all_items):
     output = {
         "all_items": all_items,
@@ -193,6 +268,10 @@ def write_output(all_items):
     if not MOCK_PHASE_2:
         with open(PHASE2_CACHE, "w") as f:
             json.dump(all_items, f, indent=2, ensure_ascii=False)
+
+    # Write translated items
+    with open(os.path.join(output_dir, TRANSLATED_OUTPUT), "w") as f:
+        json.dump(run_translator_phase("Spanish", PHASE2_CACHE), f, indent=2, ensure_ascii=False)
     
     # Write the output file to the output directory
     with open(os.path.join(output_dir, OUTPUT_FILE), "w") as f:
