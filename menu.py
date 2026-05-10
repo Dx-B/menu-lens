@@ -310,7 +310,7 @@ def extract_translator_dict(cache, language):
         }
     ]
     
-    local_params["messages"] = translate_section_parameters
+    local_params["messages"] = translate_section_parameters #
     
     try:
         response = client.messages.create(**local_params)
