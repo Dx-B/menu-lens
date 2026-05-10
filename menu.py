@@ -35,8 +35,8 @@ OUTPUT_FILE = "output.json"
 RAW_OUTPUT_FILE = "raw_output.txt"
 TRANSLATED_OUTPUT = "translated_output.json"
 
-MOCK_PHASE_1 = True # True = Read from Cache Mode, False = API call directly
-MOCK_PHASE_2 = True # True = Read from Cache Mode, False = API call directly
+MOCK_PHASE_1 = False # True = Read from Cache Mode, False = API call directly
+MOCK_PHASE_2 = False # True = Read from Cache Mode, False = API call directly
 PHASE1_CACHE = "output/phase1_cache.json"
 PHASE2_CACHE = "output/phase2_cache.json"
 
@@ -229,7 +229,7 @@ def translate(language, untranslated_items): # Retrieves the input section items
 def run_translator_phase(language, cache):
     translated_items = []
     try:
-        with open(cache, "r", encoding="utf-8") as f:
+        with open(cache, "r", encoding="utf-8", errors="replace") as f:
             untranslated_items = json.load(f)
         print("Phase 3: Parallel Translation -- Cache Read Successful")
     except FileNotFoundError:
@@ -252,6 +252,7 @@ def run_translator_phase(language, cache):
         for item in untranslated_items:
             translated_items.append(translate(language, item))
 
+    # Clean any bad output in translated file such as rate-limited returned JSON.
     translated_items = [item for item in translated_items if item]
     
     return translated_items
@@ -266,15 +267,15 @@ def write_output(all_items):
 
     # After all_items is populated, before writing output.json (Creates the Cache)
     if not MOCK_PHASE_2:
-        with open(PHASE2_CACHE, "w") as f:
+        with open(PHASE2_CACHE, "w", encoding="utf-8") as f:
             json.dump(all_items, f, indent=2, ensure_ascii=False)
 
     # Write translated items
-    with open(os.path.join(output_dir, TRANSLATED_OUTPUT), "w") as f:
+    with open(os.path.join(output_dir, TRANSLATED_OUTPUT), "w", encoding="utf-8") as f:
         json.dump(run_translator_phase("Spanish", PHASE2_CACHE), f, indent=2, ensure_ascii=False)
     
     # Write the output file to the output directory
-    with open(os.path.join(output_dir, OUTPUT_FILE), "w") as f:
+    with open(os.path.join(output_dir, OUTPUT_FILE), "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
         
     message = (
@@ -347,7 +348,7 @@ def process_data(response):
 
         # Always save raw response first
         raw = clean_json_response(response.content[0].text)
-        with open(os.path.join(output_dir, RAW_OUTPUT_FILE), "w") as f:
+        with open(os.path.join(output_dir, RAW_OUTPUT_FILE), "w", encoding="utf-8") as f:
             f.write(raw)
 
         # parse response, log costs, save cache
@@ -405,7 +406,18 @@ if COST_MODE:
         print("Aborted.")
         exit()
     else:
-        populate_menu_data()
+        use_mock_p1 = input("Use Mock Phase 1? Y = Cache will be used, N = API will be used (y/n): ")
+        if use_mock_p1.lower() == "y":
+            MOCK_PHASE_1 = True
+        else:
+            MOCK_PHASE_1 = False
+        use_mock_p2 = input("Use Mock Phase 2? Y = Cache will be used, N = API will be used (y/n): ")
+        if use_mock_p2.lower() == "y":
+            MOCK_PHASE_2 = True
+            populate_menu_data()
+        else:
+            MOCK_PHASE_2 = False
+            populate_menu_data()
 else:
     populate_menu_data()
 

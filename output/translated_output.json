@@ -1,530 +1,513 @@
 [
   {
+    "name": "Grande",
+    "price": "$5.95",
+    "description": "Jugo de tama√±o grande",
+    "abnormalities": "None",
+    "category": "Frutas y Jugos"
+  },
+  {
+    "name": "Peque√±o",
+    "price": null,
+    "description": "Jugo de tama√±o peque√±o",
+    "abnormalities": "Price not clearly readable",
+    "category": "Frutas y Jugos"
+  },
+  {
     "name": "Jugo de Naranja de Florida",
     "price": null,
     "description": "Jugo de Naranja de Florida",
-    "abnormalities": "Price not clearly visible in image",
+    "abnormalities": "Price not clearly visible/readable in image",
     "category": "Frutas y Jugos"
   },
   {
-    "name": "PequeÒo",
-    "price": "$5.95",
-    "description": "OpciÛn de jugo en tamaÒo pequeÒo",
-    "abnormalities": "Unclear which juice this size refers to specifically",
+    "name": "Jugo de Naranja de Florida Reci√©n Exprimido",
+    "price": "$6 (11oz glass)",
+    "description": "Jugo de naranja de Florida reci√©n exprimido, disponible en vaso de 11oz",
+    "abnormalities": "This appears to be a separate listing/promotion for fresh squeezed OJ alongside the standard Florida OJ entry",
     "category": "Frutas y Jugos"
   },
   {
-    "name": "Jugo de Naranja de Florida ReciÈn Exprimido",
-    "price": "$6.00 (11oz) / Glass price unclear",
-    "description": "Jugo de naranja de Florida reciÈn exprimido, disponible en 11oz o vaso",
-    "abnormalities": "Pricing partially obscured by hand holding menu",
-    "category": "Frutas y Jugos"
-  },
-  {
-    "name": "Blintzes de Ar·ndanos o de Queso",
-    "price": "14.95",
-    "description": "Servidos con az˙car en polvo y crema agria o compota de manzana",
-    "abnormalities": "The menu lists this as a single item with both Blueberry and Cheese as options rather than two separate items",
-    "category": "Blintzes de Ar·ndanos o de Queso"
-  },
-  {
-    "name": "Jugo de Toronja, Manzana, Ar·ndano, Tomate, V8, Jugo de PiÒa",
+    "name": "Jugo de Toronja, Manzana, Ar√°ndano, Tomate, V8, Jugo de Pi√±a",
     "price": null,
-    "description": "Varias opciones de jugos listadas juntas",
-    "abnormalities": "Multiple juices grouped under one line item, price not clearly visible",
+    "description": "Opciones de jugo fr√≠o",
+    "abnormalities": "Multiple juices grouped under one listing, prices not clearly readable. Small and Large size options appear available",
     "category": "Frutas y Jugos"
   },
   {
-    "name": "Huevos al Horno de Edison",
-    "price": "15.95",
-    "description": "Huevos al horno con berenjena, champiÒones, marinara r˙stica y queso de cabra",
-    "abnormalities": "The menu section appears to contain only one item. The description is partially obscured making it difficult to read completely. Price is approximate based on visible text.",
-    "category": "Huevos al Horno de Edison"
+    "name": "Cereales Fr√≠os Surtidos",
+    "price": "$6.95",
+    "description": "Con Fresas Frescas, Ar√°ndanos... con Pl√°tanos... Nueces, Granola o Miel... $8.95",
+    "abnormalities": "This item may not strictly belong to the Blueberry or Cheese Blintzes category. It appears to be listed nearby but could be a separate menu section. Text is partially obscured making full description unclear.",
+    "category": "Blintzes de Ar√°ndanos o Queso"
   },
   {
     "name": "Burrito de Desayuno de Edison",
-    "price": null,
-    "description": "Huevos revueltos con pimientos, cebollas, queso pepper jack con jamÛn y papas. Servido con salsa y totopos.",
-    "abnormalities": "Price is not clearly legible in the image due to image quality/angle. The item appears to be a single burrito dish but the exact price cannot be confirmed. Only one item exists in this category as expected.",
+    "price": "unknown",
+    "description": "Huevos revueltos con pimientos, cebollas, queso pepper jack con jam√≥n y papas. Se sirve con salsa y totopos.",
+    "abnormalities": "The price is not clearly legible in the image due to image resolution and the menu being held at an angle. There appears to be only one main item in this category with no listed variations or sub-items, which matches the expected count of approximately 1.",
     "category": "Burrito de Desayuno de Edison"
-  },
-  {
-    "name": "Wrap de Desayuno Edison",
-    "price": "$8.95",
-    "description": "Huevos revueltos con espinacas frescas, pimiento rojo, queso feta y eneldo fresco. Servido con totopos y guarniciÛn de uvas.",
-    "abnormalities": "The item appears to be a single wrap option. The price is partially obscured but appears to be $8.95. Some text in the description is difficult to read due to image quality and angle.",
-    "category": "Wrap de Desayuno Edison"
   },
   {
     "name": "Plato de Ensalada de Desayuno de Edison",
     "price": "16.95",
-    "description": "RequesÛn cremoso rodeado de pl·tanos frescos en rodajas, fresas, trozos de melÛn, mango en rodajas y kiwi.",
-    "abnormalities": "This appears to be a single platter item rather than a category with multiple items. The menu lists it as one complete dish under its own section header.",
+    "description": "Reques√≥n cremoso rodeado de pl√°tanos frescos en rodajas, fresas, trozos de mel√≥n, mango en rodajas y kiwi.",
+    "abnormalities": "This appears to be a single platter item rather than a category with multiple items. Only one item exists under this heading.",
     "category": "Plato de Ensalada de Desayuno de Edison"
   },
   {
-    "name": "Crepas FrÌas Surtidas o Calientes Fr...",
-    "price": "4.95",
-    "description": "Con Fresas Frescas, Ar·ndanos o Pl·tanos. Yogur Griego 6.95 con Pl·tanos, Nueces, Granola o Miel 8.95",
-    "abnormalities": "This item appears to be part of the Blintzes section but the text is partially obscured making it difficult to read the full name and description accurately. Price and full description may be incomplete due to image quality.",
-    "category": "Blintzes de Ar·ndano o Queso"
-  },
-  {
-    "name": "Medio Pomelo FrÌo",
-    "price": "$5.95",
-    "description": "Medio Pomelo FrÌo",
-    "abnormalities": "None",
-    "category": "Frutas y Jugos"
-  },
-  {
-    "name": "MelÛn Verde Fresco o MelÛn Cantalupo",
-    "price": "$6.95",
-    "description": "MelÛn Verde Fresco o MelÛn Cantalupo",
-    "abnormalities": "None",
-    "category": "Frutas y Jugos"
-  },
-  {
-    "name": "Crepes con Nutella",
-    "price": "14.95",
-    "description": "Crepes servidos con Nutella",
-    "abnormalities": "Description is partially obscured/cut off at the bottom of the menu image, full details not fully legible",
-    "category": "Crepes"
-  },
-  {
-    "name": "Medio MelÛn Cantalupo FrÌo con RequesÛn",
+    "name": "Wrap de Desayuno Edison",
     "price": "$8.95",
-    "description": "Medio MelÛn Cantalupo frÌo servido con RequesÛn",
+    "description": "Huevos revueltos con espinacas frescas, pimiento rojo, queso feta y eneldo fresco. Servido con totopos y guarnici√≥n de uvas.",
+    "abnormalities": "The price is partially obscured and difficult to read with full certainty. The description text is partially cut off and hard to read clearly in the image. Only one item exists in this category, which matches the expected count of approximately 1.",
+    "category": "Wrap de Desayuno Edison"
+  },
+  {
+    "name": "Medio Pomelo Fr√≠o",
+    "price": "$5.95",
+    "description": "Medio Pomelo Fr√≠o",
     "abnormalities": "None",
     "category": "Frutas y Jugos"
   },
   {
-    "name": "Crepes (segundo artÌculo)",
-    "price": "15.95",
-    "description": "Detalles no completamente legibles debido al recorte de la imagen en la parte inferior del men˙",
-    "abnormalities": "The second crepe item is almost entirely cut off at the bottom of the image, making the name and full description unreadable. Only the price of approximately 15.95 is partially visible.",
-    "category": "Crepes"
+    "name": "Blintzes de Ar√°ndanos o Queso",
+    "price": "$4.95",
+    "description": "Servido con az√∫car en polvo y crema agria o compota de manzana. Con Fresas Frescas, Ar√°ndanos Frescos o Compota Fresca de Ar√°ndanos... $1.50 adicional. Real Nec... $4.95",
+    "abnormalities": "The text is partially obscured and difficult to read fully. The ending of one line appears cut off with 'Real Nec...' which likely refers to an additional topping option. Price clarity is uncertain due to image quality.",
+    "category": "Blintzes de Ar√°ndanos o Queso"
   },
   {
-    "name": "Con Queso",
-    "price": "6.95",
-    "description": "Queso aÒadido al s·ndwich de huevo",
-    "abnormalities": "Listed as an add-on variation rather than a standalone item",
-    "category": "S·ndwiches a la Plancha"
-  },
-  {
-    "name": "Tocino, Lechuga y Tomate",
-    "price": "7.95",
-    "description": "S·ndwich de plancha BLT",
+    "name": "Mel√≥n Dulce Fresco o Cantaloupe",
+    "price": "$6.95",
+    "description": "Mel√≥n Dulce Fresco o Cantaloupe",
     "abnormalities": "None",
-    "category": "S·ndwiches a la Plancha"
+    "category": "Frutas y Jugos"
   },
   {
-    "name": "Huevos Fritos o Revueltos",
-    "price": "5.95",
-    "description": "En panecillo duro aÒadir 1.00, muffin inglÈs o bagel 1.50, en panecillo de cerdo 2.50",
-    "abnormalities": "Base item with multiple bread options at additional cost",
-    "category": "S·ndwiches a la Plancha"
-  },
-  {
-    "name": "Con Queso y Tocino, o JamÛn, o Rollo de Cerdo",
-    "price": "7.95",
-    "description": "S·ndwich de huevo con queso y opciÛn de carne",
-    "abnormalities": "Multiple meat options bundled into one menu line",
-    "category": "S·ndwiches a la Plancha"
-  },
-  {
-    "name": "Sliders de Salchicha de Pavo",
-    "price": "$14.95",
-    "description": "Tres nuggets con nuestra propia salsa de queso y salchicha",
-    "abnormalities": "The item appears to be a standalone promotional/featured item rather than a full category. Only one item is listed. The description is partially obscured by the image angle, so some details may be incomplete.",
-    "category": "Sliders de Salchicha de Pavo"
-  },
-  {
-    "name": "S·ndwich del Oeste",
-    "price": "6.95",
-    "description": "S·ndwich a la plancha estilo del oeste",
+    "name": "Medio Mel√≥n Cantalupo Fr√≠o con Reques√≥n",
+    "price": "$8.95",
+    "description": "Medio Mel√≥n Cantalupo fr√≠o servido con Reques√≥n",
     "abnormalities": "None",
-    "category": "S·ndwiches a la Plancha"
+    "category": "Frutas y Jugos"
   },
   {
-    "name": "Taylor Ham y Queso",
-    "price": "7.95",
-    "description": "S·ndwich a la plancha de taylor ham y queso",
-    "abnormalities": "None",
-    "category": "S·ndwiches a la Plancha"
+    "name": "Benedictino de Filete Mignon Rojo en Lonchas",
+    "price": "35.95",
+    "description": "Benedictino de Filete Mignon Rojo en Lonchas",
+    "abnormalities": "Description largely obscured",
+    "category": "Huevos Benedictinos de Edison"
   },
   {
-    "name": "Queso Americano a la Plancha",
-    "price": "8.45",
-    "description": "Con Tomate 7.95 o Tocino 8.45 o Tomate y Tocino 9.45",
-    "abnormalities": "Multiple variations listed with different prices on same line, making exact base price unclear",
-    "category": "S·ndwiches a la Plancha"
+    "name": "Benedictino de Pastel de Cangrejo de Maryland",
+    "price": "25.95",
+    "description": "Benedictino de Pastel de Cangrejo de Maryland",
+    "abnormalities": "Description largely obscured, minimal detail visible",
+    "category": "Huevos Benedictinos de Edison"
+  },
+  {
+    "name": "Huevos Benedict Cl√°sicos",
+    "price": "19.95",
+    "description": "Dos huevos frescos de granja delicadamente escalfados, con tocino canadiense sobre un muffin ingl√©s tostado, cubiertos con cremosa salsa holandesa y servidos con pan tostado estilo campestre",
+    "abnormalities": "Price partially obscured, estimated from context",
+    "category": "Huevos Benedict de Edison"
+  },
+  {
+    "name": "Huevos Benedict Sure√±os",
+    "price": "23.95",
+    "description": "Abundantemente relleno con tostadas y nuestros art√≠culos de estilo campestre, servido con tocino canadiense con salm√≥n ahumado",
+    "abnormalities": "Description partially obscured by image angle/glare",
+    "category": "Huevos Benedict de Edison"
+  },
+  {
+    "name": "Benedictino de Pimiento Rojo",
+    "price": null,
+    "description": "Variante de Benedictino de Pimiento Rojo",
+    "abnormalities": "May be a sub-option of Spicy Benedict rather than a separate item; price not clearly visible; only approximately 5-6 items total visible with significant portions obscured by image angle",
+    "category": "Huevos Benedictinos de Edison"
   },
   {
     "name": "Tostada de Canela con Mantequilla",
     "price": "2.45",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "Panes Frescos de PanaderÌa, Etc."
+    "description": "Tostada de canela con mantequilla",
+    "abnormalities": "None",
+    "category": "Panader√≠a Fresca, Panes, Etc."
   },
   {
-    "name": "Muffin InglÈs Jumbo Thomas' Tostado",
+    "name": "Muffin Ingl√©s Jumbo Thomas' Tostado",
     "price": "2.75",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "PanaderÌa Fresca, Panes y M·s"
+    "description": "Muffin Ingl√©s Jumbo Thomas' Tostado",
+    "abnormalities": "None",
+    "category": "Panes Frescos de Panader√≠a, Etc."
+  },
+  {
+    "name": "Pan Duro Fresco con Mantequilla",
+    "price": "2.95",
+    "description": "Pan duro fresco con mantequilla",
+    "abnormalities": "None",
+    "category": "Panes Frescos de Panader√≠a, Etc."
   },
   {
     "name": "Tostada de Aguacate",
     "price": null,
-    "description": "Aguacate machacado sobre dos rebanadas de pan tostado de 7 granos, cebolla morada, cilantro, limÛn y hojuelas de pimiento rojo",
-    "abnormalities": "Price partially obscured/illegible, appears to end in .95",
-    "category": "Panes Frescos de PanaderÌa, Etc."
+    "description": "Aguacate machacado sobre dos rebanadas de pan de masa madre, Cebolla Morada, Cilantro, Lima y Hojuelas de Chile Rojo",
+    "abnormalities": "Price not clearly legible in image",
+    "category": "Panes Frescos de Panader√≠a, Etc."
+  },
+  {
+    "name": "Benedicto Picante",
+    "price": "19.95",
+    "description": "Pruebe nuestro Benedicto Picante y de Pimiento Rojo",
+    "abnormalities": "Description partially obscured, price uncertain",
+    "category": "Huevos Benedictinos de Edison"
   },
   {
     "name": "Bizcocho Casero",
     "price": "3.95",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "Panes Frescos de PanaderÌa, Etc."
+    "description": "Bizcocho Casero",
+    "abnormalities": "None",
+    "category": "Panader√≠a: Panes Frescos y M√°s"
+  },
+  {
+    "name": "Muffin Tostado de Ar√°ndano, Salvado o Ma√≠z",
+    "price": "4.50",
+    "description": "Muffin Tostado de Ar√°ndano, Salvado o Ma√≠z",
+    "abnormalities": "None",
+    "category": "Panader√≠a Fresca, Panes, Etc."
+  },
+  {
+    "name": "Bagel Tostado con Mantequilla",
+    "price": "4.35",
+    "description": "Bagel Tostado con Mantequilla",
+    "abnormalities": "None",
+    "category": "Panader√≠a Panes Frescos, Etc."
+  },
+  {
+    "name": "Bagel Tostado con Salm√≥n Ahumado, Queso Crema, Cebollas y Guarnici√≥n",
+    "price": "17.95",
+    "description": "Con Salm√≥n Ahumado, Queso Crema, Cebollas y Guarnici√≥n",
+    "abnormalities": "None",
+    "category": "Panes Frescos de Panader√≠a, Etc."
+  },
+  {
+    "name": "Croissant Reci√©n Horneado",
+    "price": "3.95",
+    "description": "Croissant Reci√©n Horneado",
+    "abnormalities": "None",
+    "category": "Panes Frescos de Panader√≠a, Etc."
+  },
+  {
+    "name": "Torre de Tres Esponjosos Panqueques o Tortitas de Trigo Integral Dorados",
+    "price": "8.95",
+    "description": "Servidos con mantequilla y jarabe caliente",
+    "abnormalities": "Base item, price partially obscured but appears to be 8.95",
+    "category": "Panqueques de Suero de Leche"
+  },
+  {
+    "name": "Bagel Tostado con Queso Crema Philadelphia",
+    "price": null,
+    "description": "Con Queso Crema Philadelphia",
+    "abnormalities": "Price not clearly legible",
+    "category": "Panader√≠a Panes Frescos, Etc."
+  },
+  {
+    "name": "Con Fresas Frescas, o Ar√°ndanos Frescos, o Nueces",
+    "price": "add 2.00",
+    "description": "Opci√≥n de aderezo adicional para panqueques",
+    "abnormalities": "Listed as an add-on, not a standalone item",
+    "category": "Panqueques de Suero de Leche"
   },
   {
     "name": "Danish de Queso Fresco o Frutas",
     "price": "2.95",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "Panes Frescos de PanaderÌa, Etc."
+    "description": "Danish de Queso Fresco o Frutas",
+    "abnormalities": "None",
+    "category": "Panes Frescos de Panader√≠a, Etc."
   },
   {
-    "name": "Panecillo Duro con Mantequilla Fresca",
-    "price": "2.95",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "Panes Frescos de PanaderÌa, Etc."
-  },
-  {
-    "name": "Croissant ReciÈn Horneado",
-    "price": "4.35",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "Panes Frescos de PanaderÌa, Etc."
-  },
-  {
-    "name": "Muffin Tostado de Ar·ndanos, Salvado o MaÌz",
-    "price": "4.50",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "PanaderÌa: Panes Frescos y M·s"
-  },
-  {
-    "name": "Bagel Tostado con Mantequilla",
-    "price": "4.95",
-    "description": null,
-    "abnormalities": "No additional description provided",
-    "category": "PanaderÌa Panes Frescos, Etc."
-  },
-  {
-    "name": "Con Bayas Mixtas, Pl·tanos y Duraznos",
-    "price": "add $3.00",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Bagel Tostado con Queso Crema Philadelphia",
-    "price": "7.95",
-    "description": "con SalmÛn Ahumado, Queso Crema, Cebollas y GuarniciÛn",
-    "abnormalities": "Appears to be a sub-item or upgrade of the Toasted Bagel entry; pricing structure unclear",
-    "category": "Panes Frescos de PanaderÌa, Etc."
-  },
-  {
-    "name": "Con Dos Bolas de Helado",
-    "price": "add $3.00",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Con Tu ElecciÛn de Compota de Fruta Caliente de Ar·ndano, Manzana con Canela, Cereza o Fresa",
-    "price": "add $2.00",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Con Dos Huevos A Su Gusto",
-    "price": "add $4.95",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Waffle Belga Crujiente (Simple)",
-    "price": "$11.95",
-    "description": "Un Waffle Belga Dorado Hecho al Momento ñ Crujiente ñ °Fresco y Caliente Directo de la Wafflera! Servido con Mantequilla y Jarabe Caliente.",
-    "abnormalities": "Base item, all add-ons listed separately",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Con JamÛn, Salchichas o Hamburguesas de Salchicha",
-    "price": "add $6.95",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Con Tocino Canadiense o Tocino de Pavo",
-    "price": "add $4.95",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Con JamÛn, Rollo de Cerdo, Eslabones de Salchicha o Empanadas",
-    "price": "add $6.95",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Possible duplicate of ham/sausage option; text partially obscured",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "Con Tocino Ahumado de Manzano en Corte Grueso",
-    "price": "add $7.95",
-    "description": "OpciÛn adicional para el Waffle Belga",
-    "abnormalities": "Add-on, not a standalone item",
-    "category": "Waffles Belgas Crujientes"
-  },
-  {
-    "name": "AdiciÛn de Fresas Frescas, Ar·ndanos o Nueces",
+    "name": "Con Pl√°tano y Nueces, o Chispas de Chocolate Oscuro Hershey's Mezcladas en la Masa",
     "price": "add 2.00",
-    "description": "OpciÛn adicional para los panqueques",
-    "abnormalities": "This is an add-on modifier, not a standalone item",
+    "description": "Opci√≥n adicional mezclada en la masa",
+    "abnormalities": "Listed as an add-on, not a standalone item",
     "category": "Panqueques de Suero de Leche"
   },
   {
     "name": "Panqueques de Yogur Griego",
     "price": "10.95",
-    "description": "Panqueques cubiertos con yogur y miel",
+    "description": "Cubiertos con yogur y miel",
     "abnormalities": "Price partially obscured, estimated at 10.95",
     "category": "Panqueques de Suero de Leche"
   },
   {
-    "name": "Torre de Tres Esponjosos Hotcakes de Suero de Leche Dorados o de Trigo",
-    "price": "8.95",
-    "description": "Servidos con Mantequilla y Jarabe Caliente",
-    "abnormalities": "Base item, price partially obscured but estimated at 8.95",
-    "category": "Hotcakes de Suero de Leche"
-  },
-  {
-    "name": "Pl·tano y Nueces o Chispas de Chocolate Oscuro Hershey's Mezclados en la Masa",
+    "name": "Compota de Fruta Caliente de Cereza o Fresa",
     "price": "add 2.00",
-    "description": "OpciÛn adicional mezclada en la masa de los panqueques",
-    "abnormalities": "This is an add-on modifier, not a standalone item",
+    "description": "Su elecci√≥n de compota de fruta caliente de ar√°ndano, manzana con canela, cereza o fresa como topping",
+    "abnormalities": "Listed as an add-on topping",
     "category": "Panqueques de Suero de Leche"
   },
   {
-    "name": "Panqueques de Terciopelo Rojo",
-    "price": "~10.95",
-    "description": "Cubiertos con az˙car en polvo y un chorrito de queso crema",
-    "abnormalities": "Price not clearly legible, appears in a separate callout box on the menu",
+    "name": "Panqueques Red Velvet",
+    "price": "unclear",
+    "description": "Cubiertos con az√∫car en polvo y glaseado de queso crema",
+    "abnormalities": "Price is not clearly visible in the image",
     "category": "Panqueques de Suero de Leche"
   },
   {
     "name": "Panqueques Muy de Chocolate",
-    "price": "~10.95",
-    "description": "Cubiertos con az˙car en polvo y salsa de chocolate",
-    "abnormalities": "Price not clearly legible, appears in a separate callout box; this brings the total to 7 items rather than 6",
+    "price": "unclear",
+    "description": "Cubiertos con az√∫car en polvo y jarabe de chocolate",
+    "abnormalities": "Price is not clearly visible in the image; this may be an extra item beyond the expected ~6, bringing total to 7",
     "category": "Panqueques de Suero de Leche"
   },
   {
-    "name": "Panqueques de Compota de Fruta Caliente de Ar·ndano, Manzana con Canela, Cereza o Fresa",
-    "price": "add 2.00",
-    "description": "Panqueques con tu elecciÛn de topping de compota de fruta caliente",
-    "abnormalities": "Listed as an add-on but functions as a topping variation",
-    "category": "Panqueques de Suero de Leche"
+    "name": "Huevos Fritos o Revueltos con Queso",
+    "price": "6.95",
+    "description": "Con Queso",
+    "abnormalities": "None",
+    "category": "S√°ndwiches a la Plancha"
   },
   {
-    "name": "Sustituir el Tocino Canadiense con SalmÛn Ahumado",
-    "price": "23.95",
-    "description": "Huevos Benedictinos cl·sicos sustituyendo el Tocino Canadiense con SalmÛn Ahumado",
-    "abnormalities": "Listed as a substitution option rather than a standalone item",
-    "category": "Huevos Benedictinos de Edison"
+    "name": "Bistec de Jam√≥n de Virginia con Huevos",
+    "price": "21.95",
+    "description": "Bistec de jam√≥n de Virginia con sart√©n de huevos",
+    "abnormalities": "Partial description only visible",
+    "category": "Sart√©n del Desayuno de Edison"
   },
   {
-    "name": "Benedicto de Pastel de Cangrejo de Maryland",
-    "price": "23.95",
-    "description": "Huevos Benedictinos preparados con Pastel de Cangrejo de Maryland",
-    "abnormalities": "Price partially obscured",
-    "category": "Huevos Benedictinos de Edison"
+    "name": "Sart√©n de Desayuno de Edison (base)",
+    "price": "8.95",
+    "description": "Opci√≥n de sart√©n base, detalles parcialmente oscurecidos",
+    "abnormalities": "Description largely obscured by other menu items and image quality",
+    "category": "Sart√©n de Desayuno de Edison"
   },
   {
-    "name": "Huevos Benedict Cl·sicos",
+    "name": "Picadillo de Carne en Conserva",
     "price": "19.95",
-    "description": "Dos huevos frescos de granja delicadamente escalfados, con tocino canadiense sobre un muffin inglÈs tostado, baÒados con una cremosa salsa holandesa y servidos con papas fritas estilo campestre",
-    "abnormalities": "Price partially obscured by image angle",
-    "category": "Huevos Benedict de Edison"
+    "description": "Opci√≥n de sart√©n con picadillo de carne en conserva",
+    "abnormalities": "Full description not clearly visible due to image quality and overlapping content",
+    "category": "Sart√©n de Desayuno de Edison"
   },
   {
-    "name": "Benedicto de Filete Mignon Rojo en Lonchas",
-    "price": "25.95",
-    "description": "Huevos Benedicto preparados con filete mignon rojo en lonchas",
-    "abnormalities": "Price partially obscured by image angle",
-    "category": "Huevos Benedicto de Edison"
+    "name": "Con Queso y Tocino, o Jam√≥n, o Rollo de Cerdo",
+    "price": "7.95",
+    "description": "Con Queso y Tocino, o Jam√≥n, o Rollo de Cerdo",
+    "abnormalities": "This may be a modifier/addition rather than a standalone item",
+    "category": "S√°ndwiches a la Plancha"
   },
   {
-    "name": "Benedictino de Espinacas y Pimiento Rojo",
-    "price": "unknown",
-    "description": "VariaciÛn de Huevos Benedict con espinacas y pimiento rojo",
-    "abnormalities": "Price completely obscured by image angle/overlap",
-    "category": "Huevos Benedict de Edison"
+    "name": "Huevos Fritos o Revueltos (en Pan Duro)",
+    "price": "5.95",
+    "description": "En Pan Duro a√±adir 1.00, Muffin Ingl√©s o Bagel 1.50, en peque√±o 2.50",
+    "abnormalities": "Base item with multiple bread options at different price points",
+    "category": "S√°ndwiches a la Plancha"
   },
   {
-    "name": "Servido con Mantequilla y Jarabe Caliente",
-    "price": "included",
-    "description": "PorciÛn est·ndar con mantequilla y jarabe caliente",
+    "name": "Bistec de Solomillo de 8 oz.",
+    "price": "23.95",
+    "description": "Opci√≥n de sart√©n con bistec de solomillo de 8 oz.",
+    "abnormalities": "Full description not clearly readable due to poor image resolution and overlapping menu sections",
+    "category": "Sart√©n de Desayuno de Edison"
+  },
+  {
+    "name": "Tocino, Lechuga y Tomate",
+    "price": "7.95",
+    "description": "S√°ndwich BLT",
     "abnormalities": "None",
-    "category": "Tostada Francesa con Remolino de Canela"
+    "category": "S√°ndwiches a la Plancha"
   },
   {
-    "name": "Con Dos Huevos Al Gusto",
-    "price": "add $4.95",
-    "description": "Agregue dos huevos al gusto",
+    "name": "S√°ndwich Western",
+    "price": "7.95",
+    "description": "S√°ndwich estilo occidental",
     "abnormalities": "None",
-    "category": "Tostadas Francesas de Espiral de Canela"
+    "category": "S√°ndwiches a la Plancha"
+  },
+  {
+    "name": "Taylor Ham y Queso",
+    "price": "6.95",
+    "description": "S√°ndwich de Taylor Ham y Queso",
+    "abnormalities": "None",
+    "category": "S√°ndwiches a la Plancha"
+  },
+  {
+    "name": "Queso Americano a la Plancha",
+    "price": "4.95",
+    "description": "Con Tomate 7.95 o Tocino 8.45 o Tomate y Tocino 9.45",
+    "abnormalities": "Multiple price variants listed",
+    "category": "S√°ndwiches a la Plancha"
+  },
+  {
+    "name": "Wrap de Desayuno Edison",
+    "price": "18.95",
+    "description": "Huevos revueltos con verduras frescas, pimiento rojo, queso feta y eneldo fresco. Servido con totopos y guarnici√≥n de vegetales",
+    "abnormalities": "May be listed under its own category rather than Griddle Sandwiches; price seems high compared to others",
+    "category": "S√°ndwiches a la Plancha"
   },
   {
     "name": "Con Dos Bolas de Helado",
     "price": "add $3.00",
-    "description": "AÒadir dos bolas de helado",
-    "abnormalities": "None",
-    "category": "Tostada Francesa con Espiral de Canela"
+    "description": "Waffle servido con dos bolas de helado.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Con Bayas Mixtas, Pl√°tanos y Duraznos",
+    "price": "add $3.00",
+    "description": "Waffle servido con bayas mixtas, pl√°tanos y duraznos.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Huevos al Horno de Edison",
+    "price": "$15.95",
+    "description": "Huevos al horno con berenjena, champi√±ones, marinara r√∫stica y queso gruyere",
+    "abnormalities": "The section appears to contain only one item. The price is partially obscured but appears to be $15.95. Description details are partially difficult to read due to image quality and angle.",
+    "category": "Huevos al Horno de Edison"
+  },
+  {
+    "name": "Con Su Elecci√≥n de Compota de Fruta Caliente de Ar√°ndano, Manzana con Canela, Cereza o Fresa",
+    "price": "add $2.00",
+    "description": "Waffle servido con su elecci√≥n de topping de compota de fruta caliente.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Gofre Belga Crujiente (Sin Adornos)",
+    "price": "$11.95",
+    "description": "Un Gofre Belga Dorado Hecho al Momento - Crujiente - Fresco y Reci√©n Salido de la Gofrera. Servido con Mantequilla y Sirope Caliente.",
+    "abnormalities": "Base item, price partially obscured but estimated at $11.95",
+    "category": "Gofres Belgas Crujientes"
+  },
+  {
+    "name": "Con Dos Huevos al Gusto",
+    "price": "add $4.95",
+    "description": "Waffle servido con dos huevos cocinados al gusto.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Con Dos Huevos, Pan, Salchichas en Rodajas o en Medall√≥n",
+    "price": "add $6.95",
+    "description": "Waffle servido con dos huevos, pan y salchichas en rodajas o en medall√≥n.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Con Jam√≥n, Tocino Canadiense o Tocino de Pavo",
+    "price": "add $7.95",
+    "description": "Waffle servido con jam√≥n, tocino canadiense o tocino de pavo.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Con Tocino Ahumado de Madera de Manzano en Corte Grueso",
+    "price": "add $7.95",
+    "description": "Waffle servido con tocino ahumado de madera de manzano en corte grueso.",
+    "abnormalities": "Add-on item, not a standalone menu item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Huevos al Horno de Edison",
+    "price": "$15.95",
+    "description": "Con pimientos, cebollas, tomates y queso de cabra.",
+    "abnormalities": "This item appears to be listed under or near the Belgian Waffles section but may belong to a separate category. Possible menu layout overlap.",
+    "category": "Gofres Belgas Crujientes"
+  },
+  {
+    "name": "Huevos con Canela",
+    "price": "8.95",
+    "description": "Plato de huevos servido al estilo campestre",
+    "abnormalities": "Text partially obscured, price and full description unclear",
+    "category": "Platos de Huevos y Omelettes"
+  },
+  {
+    "name": "Waffle Belga y 4 Piezas de Pollo",
+    "price": "$19.95",
+    "description": "Waffle belga servido con 4 piezas de pollo.",
+    "abnormalities": "Listed at the bottom of the Belgian Waffles section, appears to be a combo item",
+    "category": "Waffles Belgas Crujientes"
+  },
+  {
+    "name": "Crepes (segundo art√≠culo)",
+    "price": "15.95",
+    "description": "Detalles poco claros debido al recorte de la imagen en la parte inferior del men√∫",
+    "abnormalities": "This item is significantly cut off at the bottom of the image, making the name and full description impossible to read clearly. Price estimated as 15.95 but may be inaccurate.",
+    "category": "Crepes"
   },
   {
     "name": "Huevos Rancheros de Edison",
     "price": "16.95",
-    "description": "Dos huevos, al estilo que prefieras, servidos con salsa fresca, frijoles negros, aguacate, cubiertos con jalapeÒo, queso de granja, cilantro picado, todo servido sobre tortillas tostadas. Con papas fritas caseras.",
-    "abnormalities": "This appears to be a single item category with only one dish rather than a category containing multiple items. The price is partially obscured making exact confirmation difficult.",
+    "description": "Dos huevos, al gusto, servidos con salsa sazonada, frijoles negros, aguacate, cubiertos con jalape√±o, queso de granja, cilantro picado, todo servido en tortillas tostadas. Con papas fritas caseras.",
+    "abnormalities": "This appears to be a single item category with only one menu item. The text is partially obscured making exact price and full description difficult to confirm with complete certainty.",
     "category": "Huevos Rancheros de Edison"
   },
   {
-    "name": "Tostada Francesa de Rollo de Canela (Base)",
-    "price": null,
-    "description": "Gruesas Rebanadas de Deliciosa Tostada Francesa Cl·sica Hecha con Nuestro Propio Pan Challah de Rollo de Canela Horneado en Casa, BaÒadas en Rica Mezcla de Huevo",
-    "abnormalities": "Base price not clearly legible in image, appears to be around $11.95",
-    "category": "Tostada Francesa de Rollo de Canela"
-  },
-  [],
-  [],
-  [],
-  {
-    "name": "Con Tocino Ahumado de Madera de Manzano en Corte Grueso",
-    "price": "add $7.95",
-    "description": "AÒade tocino ahumado de madera de manzano en corte grueso",
-    "abnormalities": "Higher add-on price compared to other meat options",
-    "category": "Tostada Francesa con Espiral de Canela"
-  },
-  [],
-  [],
-  [],
-  [],
-  [],
-  {
-    "name": "Bistec de JamÛn de Virginia y Huevos / Bistec de Solomillo de 8 oz",
-    "price": "~$23.95",
-    "description": "Parece incluir una opciÛn de proteÌna con huevos en forma de sartÈn - detalles completos oscurecidos",
-    "abnormalities": "This may actually be two separate items rather than one. The section is heavily obscured making accurate reading very difficult. Prices and descriptions are approximate due to poor visibility.",
-    "category": "SartÈn de Desayuno de Edison"
-  },
-  [],
-  [],
-  {
-    "name": "Gofre Belga y 4 Piezas de Pollo",
-    "price": "$19.95",
-    "description": "Gofre belga con 4 piezas de pollo",
-    "abnormalities": "This item appears to be listed at the bottom of this section but may belong to a separate category",
-    "category": "Tostada Francesa con Espiral de Canela"
-  },
-  [],
-  {
-    "name": "Omelette Mexicali",
-    "price": "17.95",
-    "description": "Relleno de Chile, Pimientos JalapeÒo, Cebollas y Tomates, cubierto con Queso Farmers y Cheddar",
-    "abnormalities": "None",
-    "category": "Omelettes Especiales de Edison"
-  },
-  [],
-  [],
-  [],
-  [],
-  {
-    "name": "PorciÛn de Hash de Carne en Conserva",
-    "price": "19.95",
-    "description": "Plato de huevos con hash de carne en conserva",
-    "abnormalities": "Partially obscured",
-    "category": "Platos de Huevos y Omelettes"
-  },
-  [],
-  [],
-  [],
-  {
-    "name": "Bistec de JamÛn de Virginia con Huevos",
-    "price": "23.95",
-    "description": "Bistec de jamÛn de Virginia servido con huevos",
-    "abnormalities": "None",
-    "category": "Platos de Huevos y Omelettes"
-  },
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  {
-    "name": "Bistec de Solomillo de 8 oz.",
-    "price": "Unknown",
-    "description": "Bistec de solomillo de 8 oz con huevos",
-    "abnormalities": "Price fully obscured by hand/glare",
+    "name": "Huevos Peque√±os",
+    "price": "7.95",
+    "description": "Huevos al gusto",
+    "abnormalities": "Text partially obscured, full name unclear",
     "category": "Platos de Huevos y Omelettes"
   },
   {
-    "name": "Tortilla de Cebolla",
+    "name": "TORTILLA DE CEBOLLA",
     "price": "13.95",
     "description": "Tortilla con cebollas",
     "abnormalities": "None",
-    "category": "Platos de Huevos y Tortillas"
-  },
-  [],
-  [],
-  [],
-  [],
-  {
-    "name": "Tortilla de Chili Tejano",
-    "price": "13.95",
-    "description": "Tortilla con chili tejano",
-    "abnormalities": "None",
-    "category": "Platos de Huevos y Tortillas"
-  },
-  [],
-  [],
-  {
-    "name": "Omelette para Amantes de la Carne",
-    "price": "15.95",
-    "description": "Carne de gyro, pimientos y cebollas",
-    "abnormalities": "None",
-    "category": "Platos de Huevos y Omelettes"
+    "category": "Tortillas Simples y de Queso"
   },
   {
-    "name": "Tortilla de Verduras",
+    "name": "Deslizadores de Salchicha de Pavo",
+    "price": "$14.95",
+    "description": "Tres nuggets con nuestra salsa de queso y salchicha",
+    "abnormalities": "This appears to be a standalone item rather than a category with multiple items. The description is partially obscured in the image, making full details difficult to confirm. Price notation uses '!!' before the price (!!$14.95) which may be a stylistic emphasis rather than an abnormality.",
+    "category": "Deslizadores de Salchicha de Pavo"
+  },
+  {
+    "name": "Tortilla Florentina",
     "price": "16.95",
-    "description": "Tortilla con pimientos, cebollas, champiÒones y salchicha",
-    "abnormalities": "Listed as Veggie but appears to include sausage - possible menu error",
-    "category": "Platos de Huevos y Tortillas"
+    "description": "Un sabroso relleno de espinacas mezclado con suave queso feta",
+    "abnormalities": "None",
+    "category": "Tortillas Especiales de Edison"
   },
   {
-    "name": "Tortilla de SalmÛn Ahumado de Nueva Escocia y Cebolla",
-    "price": "13.95",
-    "description": "Tortilla con salmÛn ahumado de Nueva Escocia, pimientos salteados y rodajas de cebolla",
+    "name": "Tortilla de la Granja",
+    "price": "16.95",
+    "description": "Espinacas frescas, champi√±ones, tomate, cebolla y queso suizo. Cubierta con salsa holandesa y cebolletas",
     "abnormalities": "None",
-    "category": "Platos de Huevos y Tortillas"
+    "category": "Tortillas Especiales de Edison"
+  },
+  {
+    "name": "Omelette Italiano",
+    "price": "17.95",
+    "description": "Salchicha Italiana, Cebollas, Pimientos, Champi√±ones y Queso Mozzarella cubiertos con Salsa de Tomate Picante",
+    "abnormalities": "None",
+    "category": "Omelettes Especiales de Edison"
+  },
+  {
+    "name": "Con Dos Huevos Al Gusto",
+    "price": "+4.95",
+    "description": "Agregue dos huevos al gusto",
+    "abnormalities": "None",
+    "category": "Tostadas Francesas de Rollo de Canela"
+  },
+  {
+    "name": "Tostadas Francesas de Espiral de Canela (Base)",
+    "price": null,
+    "description": "Gruesas Rebanadas de Deliciosas Tostadas Francesas a la Antigua Hechas con Nuestro Propio Pan Challah de Canela Enrollada Horneado en Casa, Ba√±adas en Rica Mezcla de Huevo.",
+    "abnormalities": "Base price not clearly legible in image, appears to be around $11.95",
+    "category": "Tostadas Francesas de Espiral de Canela"
+  },
+  {
+    "name": "Con Jam√≥n, Rollo de Cerdo, Salchichas o Hamburguesas de Salchicha",
+    "price": "+4.95",
+    "description": "Agregue jam√≥n, rollo de cerdo, salchichas o hamburguesas de salchicha",
+    "abnormalities": "None",
+    "category": "Tostada Francesa de Canela"
+  },
+  {
+    "name": "Waffle Belga y 4 Piezas de Pollo",
+    "price": "19.95",
+    "description": "Waffle belga con 4 piezas de pollo",
+    "abnormalities": "This item appears at the bottom of the French Toast section but may belong to a different category - possible menu layout abnormality",
+    "category": "Tostada Francesa de Canela y Espiral"
   }
 ]
